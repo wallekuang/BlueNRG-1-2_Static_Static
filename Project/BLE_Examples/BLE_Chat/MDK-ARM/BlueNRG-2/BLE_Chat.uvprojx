@@ -3365,7 +3365,7 @@
             <ScatterFile>BlueNRG2.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc>--predefine="-DST_USE_OTA_SERVICE_MANAGER_APPLICATION=1 -DMEMORY_FLASH_APP_OFFSET=0x1D800 -DMEMORY_RAM_APP_OFFSET=0x0460 "
+            <Misc>--predefine="-DST_USE_OTA_SERVICE_MANAGER_APPLICATION=1 -DMEMORY_FLASH_APP_OFFSET=0x17000 -DMEMORY_RAM_APP_OFFSET=0x0460 "
 </Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings>6314,6329</DisabledWarnings>

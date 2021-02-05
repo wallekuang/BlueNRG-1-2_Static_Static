@@ -1095,173 +1095,173 @@ Image Symbol Table
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
     init.s                                   0x00000000   Number         0  init.o ABSOLUTE
-    .intvec                                  0x1005d800   Section      192  system_bluenrg1.o(.intvec)
-    __tagsym$$used                           0x1005d800   Number         0  system_bluenrg1.o(.intvec)
-    . text                                   0x1005d8c0   Section      160  context_switch.o(. text)
-    .ARM.Collect$$$$00000000                 0x1005d960   Section        0  entry.o(.ARM.Collect$$$$00000000)
-    .ARM.Collect$$$$00000002                 0x1005d960   Section        4  entry3.o(.ARM.Collect$$$$00000002)
-    .ARM.Collect$$$$00000004                 0x1005d964   Section        4  entry5.o(.ARM.Collect$$$$00000004)
-    .ARM.Collect$$$$00000008                 0x1005d968   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
-    .ARM.Collect$$$$0000000A                 0x1005d968   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
-    .ARM.Collect$$$$0000000B                 0x1005d968   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
-    .ARM.Collect$$$$0000000D                 0x1005d970   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
-    .ARM.Collect$$$$0000000F                 0x1005d970   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
-    .ARM.Collect$$$$00002713                 0x1005d970   Section        4  entry3.o(.ARM.Collect$$$$00002713)
-    __lit__00000000                          0x1005d970   Data           4  entry3.o(.ARM.Collect$$$$00002713)
-    .text                                    0x1005d974   Section        0  uidiv.o(.text)
-    .text                                    0x1005d9a0   Section        0  memcpy.o(.text)
-    .text                                    0x1005d9c8   Section        0  uldiv.o(.text)
-    .text                                    0x1005da28   Section        0  llshl.o(.text)
-    .text                                    0x1005da48   Section       36  init.o(.text)
-    .text                                    0x1005da6c   Section        0  llushr.o(.text)
-    .text                                    0x1005da8e   Section        0  __dczerorl.o(.text)
-    i.ADC_Handler                            0x1005dac8   Section        0  system_bluenrg1.o(i.ADC_Handler)
-    i.APP_Tick                               0x1005dacc   Section        0  chat.o(i.APP_Tick)
-    i.Add_Chat_Service                       0x1005daec   Section        0  gatt_db.o(i.Add_Chat_Service)
-    i.Attribute_Modified_CB                  0x1005dc38   Section        0  gatt_db.o(i.Attribute_Modified_CB)
-    i.BOR_ConfigSave                         0x1005dc84   Section        0  system_bluenrg1.o(i.BOR_ConfigSave)
-    i.BlueNRG_Stack_Initialization           0x1005dcc4   Section        0  bluenrg1_stack_init_if.o(i.BlueNRG_Stack_Initialization)
-    i.Blue_Handler                           0x1005dea4   Section        0  bluenrg1_it.o(i.Blue_Handler)
-    i.CHAT_DeviceInit                        0x1005deac   Section        0  chat.o(i.CHAT_DeviceInit)
-    i.Clock_Init                             0x1005e0c8   Section        0  clock.o(i.Clock_Init)
-    i.DMA_Handler                            0x1005e0f4   Section        0  system_bluenrg1.o(i.DMA_Handler)
-    i.DeviceConfiguration                    0x1005e0f8   Section        0  system_bluenrg1.o(i.DeviceConfiguration)
-    i.GPIO_Handler                           0x1005e25c   Section        0  bluenrg1_it.o(i.GPIO_Handler)
-    i.GPIO_Init                              0x1005e260   Section        0  bluenrg1_gpio.o(i.GPIO_Init)
-    i.GPIO_ReadBit                           0x1005e334   Section        0  bluenrg1_gpio.o(i.GPIO_ReadBit)
-    i.Get_ButtonGpioPin                      0x1005e348   Section        0  sdk_eval_button.o(i.Get_ButtonGpioPin)
-    i.HAL_GetPartInfo                        0x1005e374   Section        0  miscutil.o(i.HAL_GetPartInfo)
-    i.HAL_VTimerTimeoutCallback              0x1005e3d4   Section        0  bluenrg1_stack_init_if.o(i.HAL_VTimerTimeoutCallback)
-    i.HardFault_Handler                      0x1005e3d6   Section        0  bluenrg1_it.o(i.HardFault_Handler)
-    i.I2C1_Handler                           0x1005e3d8   Section        0  system_bluenrg1.o(i.I2C1_Handler)
-    i.I2C2_Handler                           0x1005e3da   Section        0  system_bluenrg1.o(i.I2C2_Handler)
-    i.MFT1A_Handler                          0x1005e3dc   Section        0  system_bluenrg1.o(i.MFT1A_Handler)
-    i.MFT1B_Handler                          0x1005e3de   Section        0  system_bluenrg1.o(i.MFT1B_Handler)
-    i.MFT2A_Handler                          0x1005e3e0   Section        0  system_bluenrg1.o(i.MFT2A_Handler)
-    i.MFT2B_Handler                          0x1005e3e2   Section        0  system_bluenrg1.o(i.MFT2B_Handler)
-    i.Make_Connection                        0x1005e3e4   Section        0  chat.o(i.Make_Connection)
-    i.NMI_Handler                            0x1005e4e4   Section        0  bluenrg1_it.o(i.NMI_Handler)
-    i.NVIC_Init                              0x1005e4e8   Section        0  misc.o(i.NVIC_Init)
-    i.NVIC_SetPriority                       0x1005e570   Section        0  system_bluenrg1.o(i.NVIC_SetPriority)
-    NVIC_SetPriority                         0x1005e571   Thumb Code    60  system_bluenrg1.o(i.NVIC_SetPriority)
-    i.NVIC_SystemReset                       0x1005e5b4   Section        0  ota_btl.o(i.NVIC_SystemReset)
-    NVIC_SystemReset                         0x1005e5b5   Thumb Code    16  ota_btl.o(i.NVIC_SystemReset)
-    i.NVM_Handler                            0x1005e5cc   Section        0  system_bluenrg1.o(i.NVM_Handler)
-    i.OTA_Jump_To_Service_Manager_Application 0x1005e5d0   Section        0  ota_btl.o(i.OTA_Jump_To_Service_Manager_Application)
-    i.Osal_MemCpy                            0x1005e5e4   Section        0  osal.o(i.Osal_MemCpy)
-    i.PKA_Handler                            0x1005e5ec   Section        0  system_bluenrg1.o(i.PKA_Handler)
-    i.PendSV_Handler                         0x1005e5ee   Section        0  system_bluenrg1.o(i.PendSV_Handler)
-    i.Process_InputData                      0x1005e5f0   Section        0  chat.o(i.Process_InputData)
-    i.RESET_HANDLER                          0x1005e664   Section        0  system_bluenrg1.o(i.RESET_HANDLER)
-    i.RTC_Handler                            0x1005e684   Section        0  system_bluenrg1.o(i.RTC_Handler)
-    i.SET_BORconfigStatus                    0x1005e688   Section        0  system_bluenrg1.o(i.SET_BORconfigStatus)
-    i.SPI_Handler                            0x1005e6c4   Section        0  system_bluenrg1.o(i.SPI_Handler)
-    i.SVC_Handler                            0x1005e6c6   Section        0  bluenrg1_it.o(i.SVC_Handler)
-    i.SdkEvalComIOConfig                     0x1005e6c8   Section        0  sdk_eval_com.o(i.SdkEvalComIOConfig)
-    i.SdkEvalComIOReceiveData                0x1005e6e4   Section        0  sdk_eval_com.o(i.SdkEvalComIOReceiveData)
-    i.SdkEvalComIOSendData                   0x1005e6f4   Section        0  sdk_eval_com.o(i.SdkEvalComIOSendData)
-    i.SdkEvalComIOUartIrqHandler             0x1005e6fc   Section        0  sdk_eval_com.o(i.SdkEvalComIOUartIrqHandler)
-    i.SdkEvalComUartInit                     0x1005e728   Section        0  sdk_eval_com.o(i.SdkEvalComUartInit)
-    i.SdkEvalComUartIrqConfig                0x1005e7c8   Section        0  sdk_eval_com.o(i.SdkEvalComUartIrqConfig)
-    i.SdkEvalGetVersion                      0x1005e7e8   Section        0  sdk_eval_config.o(i.SdkEvalGetVersion)
-    i.SdkEvalIdentification                  0x1005e7f4   Section        0  sdk_eval_config.o(i.SdkEvalIdentification)
-    i.SdkEvalPushButtonGetState              0x1005e800   Section        0  sdk_eval_button.o(i.SdkEvalPushButtonGetState)
-    i.SdkEvalPushButtonInit                  0x1005e812   Section        0  sdk_eval_button.o(i.SdkEvalPushButtonInit)
-    i.SdkEvalUart_Send_Data                  0x1005e838   Section        0  sdk_eval_com.o(i.SdkEvalUart_Send_Data)
-    SdkEvalUart_Send_Data                    0x1005e839   Thumb Code    22  sdk_eval_com.o(i.SdkEvalUart_Send_Data)
-    i.Send_Data_Over_BLE                     0x1005e850   Section        0  chat.o(i.Send_Data_Over_BLE)
-    i.Set_RF_FrontEnd                        0x1005e8d0   Section        0  system_bluenrg1.o(i.Set_RF_FrontEnd)
-    i.SysCount_Handler                       0x1005e918   Section        0  clock.o(i.SysCount_Handler)
-    i.SysCtrl_GetWakeupResetReason           0x1005e928   Section        0  bluenrg1_sysctrl.o(i.SysCtrl_GetWakeupResetReason)
-    i.SysCtrl_PeripheralClockCmd             0x1005e9c0   Section        0  bluenrg1_sysctrl.o(i.SysCtrl_PeripheralClockCmd)
-    i.SysTick_Handler                        0x1005e9d8   Section        0  bluenrg1_it.o(i.SysTick_Handler)
-    i.SystemInit                             0x1005e9e0   Section        0  system_bluenrg1.o(i.SystemInit)
-    i.UART_Cmd                               0x1005ea98   Section        0  bluenrg1_uart.o(i.UART_Cmd)
-    i.UART_GetFlagStatus                     0x1005eab4   Section        0  bluenrg1_uart.o(i.UART_GetFlagStatus)
-    i.UART_GetITStatus                       0x1005ead0   Section        0  bluenrg1_uart.o(i.UART_GetITStatus)
-    i.UART_Handler                           0x1005eae4   Section        0  bluenrg1_it.o(i.UART_Handler)
-    i.UART_ITConfig                          0x1005eaec   Section        0  bluenrg1_uart.o(i.UART_ITConfig)
-    i.UART_Init                              0x1005eb04   Section        0  bluenrg1_uart.o(i.UART_Init)
-    i.UART_ReceiveData                       0x1005ec3c   Section        0  bluenrg1_uart.o(i.UART_ReceiveData)
-    i.UART_RxFifoIrqLevelConfig              0x1005ec48   Section        0  bluenrg1_uart.o(i.UART_RxFifoIrqLevelConfig)
-    i.UART_SendData                          0x1005ec60   Section        0  bluenrg1_uart.o(i.UART_SendData)
-    i.WDG_Handler                            0x1005ec70   Section        0  system_bluenrg1.o(i.WDG_Handler)
-    i.__0printf$8                            0x1005ec74   Section        0  printf8.o(i.__0printf$8)
-    i.__low_level_init                       0x1005ec94   Section        0  system_bluenrg1.o(i.__low_level_init)
-    i.__scatterload_copy                     0x1005ed54   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x1005ed62   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x1005ed64   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._printf_core                           0x1005ed74   Section        0  printf8.o(i._printf_core)
-    _printf_core                             0x1005ed75   Thumb Code  1020  printf8.o(i._printf_core)
-    i._printf_post_padding                   0x1005f19c   Section        0  printf8.o(i._printf_post_padding)
-    _printf_post_padding                     0x1005f19d   Thumb Code    32  printf8.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x1005f1bc   Section        0  printf8.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x1005f1bd   Thumb Code    44  printf8.o(i._printf_pre_padding)
-    i.aci_att_exchange_mtu_resp_event        0x1005f1e8   Section        0  bluenrg1_stack_init_if.o(i.aci_att_exchange_mtu_resp_event)
-    i.aci_att_exec_write_resp_event          0x1005f1ea   Section        0  bluenrg1_stack_init_if.o(i.aci_att_exec_write_resp_event)
-    i.aci_att_find_by_type_value_resp_event  0x1005f1ec   Section        0  bluenrg1_stack_init_if.o(i.aci_att_find_by_type_value_resp_event)
-    i.aci_att_find_info_resp_event           0x1005f1ee   Section        0  bluenrg1_stack_init_if.o(i.aci_att_find_info_resp_event)
-    i.aci_att_prepare_write_resp_event       0x1005f1f0   Section        0  bluenrg1_stack_init_if.o(i.aci_att_prepare_write_resp_event)
-    i.aci_att_read_blob_resp_event           0x1005f1f2   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_blob_resp_event)
-    i.aci_att_read_by_group_type_resp_event  0x1005f1f4   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_by_group_type_resp_event)
-    i.aci_att_read_by_type_resp_event        0x1005f1f6   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_by_type_resp_event)
-    i.aci_att_read_multiple_resp_event       0x1005f1f8   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_multiple_resp_event)
-    i.aci_att_read_resp_event                0x1005f1fa   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_resp_event)
-    i.aci_gap_addr_not_resolved_event        0x1005f1fc   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_addr_not_resolved_event)
-    i.aci_gap_authorization_req_event        0x1005f1fe   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_authorization_req_event)
-    i.aci_gap_bond_lost_event                0x1005f200   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_bond_lost_event)
-    i.aci_gap_keypress_notification_event    0x1005f202   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_keypress_notification_event)
-    i.aci_gap_limited_discoverable_event     0x1005f204   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_limited_discoverable_event)
-    i.aci_gap_numeric_comparison_value_event 0x1005f206   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_numeric_comparison_value_event)
-    i.aci_gap_pairing_complete_event         0x1005f208   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_pairing_complete_event)
-    i.aci_gap_pass_key_req_event             0x1005f20a   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_pass_key_req_event)
-    i.aci_gap_proc_complete_event            0x1005f20c   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_proc_complete_event)
-    i.aci_gap_slave_security_initiated_event 0x1005f20e   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_slave_security_initiated_event)
-    i.aci_gatt_attribute_modified_event      0x1005f210   Section        0  chat.o(i.aci_gatt_attribute_modified_event)
-    i.aci_gatt_disc_read_char_by_uuid_resp_event 0x1005f21e   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_disc_read_char_by_uuid_resp_event)
-    i.aci_gatt_error_resp_event              0x1005f220   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_error_resp_event)
-    i.aci_gatt_indication_event              0x1005f222   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_indication_event)
-    i.aci_gatt_notification_event            0x1005f224   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_notification_event)
-    i.aci_gatt_prepare_write_permit_req_event 0x1005f226   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_prepare_write_permit_req_event)
-    i.aci_gatt_proc_complete_event           0x1005f228   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_proc_complete_event)
-    i.aci_gatt_proc_timeout_event            0x1005f22a   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_proc_timeout_event)
-    i.aci_gatt_read_multi_permit_req_event   0x1005f22c   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_read_multi_permit_req_event)
-    i.aci_gatt_read_permit_req_event         0x1005f22e   Section        0  chat.o(i.aci_gatt_read_permit_req_event)
-    i.aci_gatt_server_confirmation_event     0x1005f230   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_server_confirmation_event)
-    i.aci_gatt_tx_pool_available_event       0x1005f234   Section        0  chat.o(i.aci_gatt_tx_pool_available_event)
-    i.aci_gatt_write_permit_req_event        0x1005f244   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_write_permit_req_event)
-    i.aci_hal_end_of_radio_activity_event    0x1005f246   Section        0  chat.o(i.aci_hal_end_of_radio_activity_event)
-    i.aci_hal_fw_error_event                 0x1005f248   Section        0  ble_chat_main.o(i.aci_hal_fw_error_event)
-    i.aci_hal_scan_req_report_event          0x1005f25e   Section        0  bluenrg1_stack_init_if.o(i.aci_hal_scan_req_report_event)
-    i.aci_l2cap_command_reject_event         0x1005f260   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_command_reject_event)
-    i.aci_l2cap_connection_update_req_event  0x1005f262   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_req_event)
-    i.aci_l2cap_connection_update_resp_event 0x1005f264   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_resp_event)
-    i.aci_l2cap_proc_timeout_event           0x1005f266   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_proc_timeout_event)
-    i.fputc                                  0x1005f268   Section        0  sdk_eval_com.o(i.fputc)
-    i.hci_data_buffer_overflow_event         0x1005f274   Section        0  bluenrg1_stack_init_if.o(i.hci_data_buffer_overflow_event)
-    i.hci_disconnection_complete_event       0x1005f278   Section        0  chat.o(i.hci_disconnection_complete_event)
-    i.hci_encryption_change_event            0x1005f2c0   Section        0  bluenrg1_stack_init_if.o(i.hci_encryption_change_event)
-    i.hci_encryption_key_refresh_complete_event 0x1005f2c2   Section        0  bluenrg1_stack_init_if.o(i.hci_encryption_key_refresh_complete_event)
-    i.hci_hardware_error_event               0x1005f2c4   Section        0  ble_chat_main.o(i.hci_hardware_error_event)
-    i.hci_le_advertising_report_event        0x1005f2dc   Section        0  bluenrg1_stack_init_if.o(i.hci_le_advertising_report_event)
-    i.hci_le_connection_complete_event       0x1005f2e0   Section        0  chat.o(i.hci_le_connection_complete_event)
-    i.hci_le_connection_update_complete_event 0x1005f2f4   Section        0  bluenrg1_stack_init_if.o(i.hci_le_connection_update_complete_event)
-    i.hci_le_data_length_change_event        0x1005f2f6   Section        0  bluenrg1_stack_init_if.o(i.hci_le_data_length_change_event)
-    i.hci_le_direct_advertising_report_event 0x1005f2f8   Section        0  bluenrg1_stack_init_if.o(i.hci_le_direct_advertising_report_event)
-    i.hci_le_enhanced_connection_complete_event 0x1005f2fa   Section        0  bluenrg1_stack_init_if.o(i.hci_le_enhanced_connection_complete_event)
-    i.hci_le_generate_dhkey_complete_event   0x1005f2fc   Section        0  bluenrg1_stack_init_if.o(i.hci_le_generate_dhkey_complete_event)
-    i.hci_le_long_term_key_request_event     0x1005f2fe   Section        0  bluenrg1_stack_init_if.o(i.hci_le_long_term_key_request_event)
-    i.hci_le_read_local_p256_public_key_complete_event 0x1005f300   Section        0  bluenrg1_stack_init_if.o(i.hci_le_read_local_p256_public_key_complete_event)
-    i.hci_le_read_remote_used_features_complete_event 0x1005f302   Section        0  bluenrg1_stack_init_if.o(i.hci_le_read_remote_used_features_complete_event)
-    i.hci_number_of_completed_packets_event  0x1005f304   Section        0  bluenrg1_stack_init_if.o(i.hci_number_of_completed_packets_event)
-    i.hci_read_remote_version_information_complete_event 0x1005f306   Section        0  bluenrg1_stack_init_if.o(i.hci_read_remote_version_information_complete_event)
-    i.main                                   0x1005f308   Section        0  ble_chat_main.o(i.main)
-    .constdata                               0x1005f424   Section        8  sdk_eval_config.o(.constdata)
-    .constdata                               0x1005f42c   Section        4  sdk_eval_config.o(.constdata)
-    .constdata                               0x1005f430   Section        4  sdk_eval_config.o(.constdata)
-    .constdata                               0x1005f434   Section        4  sdk_eval_config.o(.constdata)
-    .constdata                               0x1005f438   Section        4  sdk_eval_config.o(.constdata)
-    .constdata                               0x1005f43c   Section       52  ble_chat_main.o(.constdata)
+    .intvec                                  0x10057000   Section      192  system_bluenrg1.o(.intvec)
+    __tagsym$$used                           0x10057000   Number         0  system_bluenrg1.o(.intvec)
+    . text                                   0x100570c0   Section      160  context_switch.o(. text)
+    .ARM.Collect$$$$00000000                 0x10057160   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000002                 0x10057160   Section        4  entry3.o(.ARM.Collect$$$$00000002)
+    .ARM.Collect$$$$00000004                 0x10057164   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x10057168   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x10057168   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x10057168   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    .ARM.Collect$$$$0000000D                 0x10057170   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x10057170   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002713                 0x10057170   Section        4  entry3.o(.ARM.Collect$$$$00002713)
+    __lit__00000000                          0x10057170   Data           4  entry3.o(.ARM.Collect$$$$00002713)
+    .text                                    0x10057174   Section        0  uidiv.o(.text)
+    .text                                    0x100571a0   Section        0  memcpy.o(.text)
+    .text                                    0x100571c8   Section        0  uldiv.o(.text)
+    .text                                    0x10057228   Section        0  llshl.o(.text)
+    .text                                    0x10057248   Section       36  init.o(.text)
+    .text                                    0x1005726c   Section        0  llushr.o(.text)
+    .text                                    0x1005728e   Section        0  __dczerorl.o(.text)
+    i.ADC_Handler                            0x100572c8   Section        0  system_bluenrg1.o(i.ADC_Handler)
+    i.APP_Tick                               0x100572cc   Section        0  chat.o(i.APP_Tick)
+    i.Add_Chat_Service                       0x100572ec   Section        0  gatt_db.o(i.Add_Chat_Service)
+    i.Attribute_Modified_CB                  0x10057438   Section        0  gatt_db.o(i.Attribute_Modified_CB)
+    i.BOR_ConfigSave                         0x10057484   Section        0  system_bluenrg1.o(i.BOR_ConfigSave)
+    i.BlueNRG_Stack_Initialization           0x100574c4   Section        0  bluenrg1_stack_init_if.o(i.BlueNRG_Stack_Initialization)
+    i.Blue_Handler                           0x100576a4   Section        0  bluenrg1_it.o(i.Blue_Handler)
+    i.CHAT_DeviceInit                        0x100576ac   Section        0  chat.o(i.CHAT_DeviceInit)
+    i.Clock_Init                             0x100578c8   Section        0  clock.o(i.Clock_Init)
+    i.DMA_Handler                            0x100578f4   Section        0  system_bluenrg1.o(i.DMA_Handler)
+    i.DeviceConfiguration                    0x100578f8   Section        0  system_bluenrg1.o(i.DeviceConfiguration)
+    i.GPIO_Handler                           0x10057a5c   Section        0  bluenrg1_it.o(i.GPIO_Handler)
+    i.GPIO_Init                              0x10057a60   Section        0  bluenrg1_gpio.o(i.GPIO_Init)
+    i.GPIO_ReadBit                           0x10057b34   Section        0  bluenrg1_gpio.o(i.GPIO_ReadBit)
+    i.Get_ButtonGpioPin                      0x10057b48   Section        0  sdk_eval_button.o(i.Get_ButtonGpioPin)
+    i.HAL_GetPartInfo                        0x10057b74   Section        0  miscutil.o(i.HAL_GetPartInfo)
+    i.HAL_VTimerTimeoutCallback              0x10057bd4   Section        0  bluenrg1_stack_init_if.o(i.HAL_VTimerTimeoutCallback)
+    i.HardFault_Handler                      0x10057bd6   Section        0  bluenrg1_it.o(i.HardFault_Handler)
+    i.I2C1_Handler                           0x10057bd8   Section        0  system_bluenrg1.o(i.I2C1_Handler)
+    i.I2C2_Handler                           0x10057bda   Section        0  system_bluenrg1.o(i.I2C2_Handler)
+    i.MFT1A_Handler                          0x10057bdc   Section        0  system_bluenrg1.o(i.MFT1A_Handler)
+    i.MFT1B_Handler                          0x10057bde   Section        0  system_bluenrg1.o(i.MFT1B_Handler)
+    i.MFT2A_Handler                          0x10057be0   Section        0  system_bluenrg1.o(i.MFT2A_Handler)
+    i.MFT2B_Handler                          0x10057be2   Section        0  system_bluenrg1.o(i.MFT2B_Handler)
+    i.Make_Connection                        0x10057be4   Section        0  chat.o(i.Make_Connection)
+    i.NMI_Handler                            0x10057ce4   Section        0  bluenrg1_it.o(i.NMI_Handler)
+    i.NVIC_Init                              0x10057ce8   Section        0  misc.o(i.NVIC_Init)
+    i.NVIC_SetPriority                       0x10057d70   Section        0  system_bluenrg1.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x10057d71   Thumb Code    60  system_bluenrg1.o(i.NVIC_SetPriority)
+    i.NVIC_SystemReset                       0x10057db4   Section        0  ota_btl.o(i.NVIC_SystemReset)
+    NVIC_SystemReset                         0x10057db5   Thumb Code    16  ota_btl.o(i.NVIC_SystemReset)
+    i.NVM_Handler                            0x10057dcc   Section        0  system_bluenrg1.o(i.NVM_Handler)
+    i.OTA_Jump_To_Service_Manager_Application 0x10057dd0   Section        0  ota_btl.o(i.OTA_Jump_To_Service_Manager_Application)
+    i.Osal_MemCpy                            0x10057de4   Section        0  osal.o(i.Osal_MemCpy)
+    i.PKA_Handler                            0x10057dec   Section        0  system_bluenrg1.o(i.PKA_Handler)
+    i.PendSV_Handler                         0x10057dee   Section        0  system_bluenrg1.o(i.PendSV_Handler)
+    i.Process_InputData                      0x10057df0   Section        0  chat.o(i.Process_InputData)
+    i.RESET_HANDLER                          0x10057e64   Section        0  system_bluenrg1.o(i.RESET_HANDLER)
+    i.RTC_Handler                            0x10057e84   Section        0  system_bluenrg1.o(i.RTC_Handler)
+    i.SET_BORconfigStatus                    0x10057e88   Section        0  system_bluenrg1.o(i.SET_BORconfigStatus)
+    i.SPI_Handler                            0x10057ec4   Section        0  system_bluenrg1.o(i.SPI_Handler)
+    i.SVC_Handler                            0x10057ec6   Section        0  bluenrg1_it.o(i.SVC_Handler)
+    i.SdkEvalComIOConfig                     0x10057ec8   Section        0  sdk_eval_com.o(i.SdkEvalComIOConfig)
+    i.SdkEvalComIOReceiveData                0x10057ee4   Section        0  sdk_eval_com.o(i.SdkEvalComIOReceiveData)
+    i.SdkEvalComIOSendData                   0x10057ef4   Section        0  sdk_eval_com.o(i.SdkEvalComIOSendData)
+    i.SdkEvalComIOUartIrqHandler             0x10057efc   Section        0  sdk_eval_com.o(i.SdkEvalComIOUartIrqHandler)
+    i.SdkEvalComUartInit                     0x10057f28   Section        0  sdk_eval_com.o(i.SdkEvalComUartInit)
+    i.SdkEvalComUartIrqConfig                0x10057fc8   Section        0  sdk_eval_com.o(i.SdkEvalComUartIrqConfig)
+    i.SdkEvalGetVersion                      0x10057fe8   Section        0  sdk_eval_config.o(i.SdkEvalGetVersion)
+    i.SdkEvalIdentification                  0x10057ff4   Section        0  sdk_eval_config.o(i.SdkEvalIdentification)
+    i.SdkEvalPushButtonGetState              0x10058000   Section        0  sdk_eval_button.o(i.SdkEvalPushButtonGetState)
+    i.SdkEvalPushButtonInit                  0x10058012   Section        0  sdk_eval_button.o(i.SdkEvalPushButtonInit)
+    i.SdkEvalUart_Send_Data                  0x10058038   Section        0  sdk_eval_com.o(i.SdkEvalUart_Send_Data)
+    SdkEvalUart_Send_Data                    0x10058039   Thumb Code    22  sdk_eval_com.o(i.SdkEvalUart_Send_Data)
+    i.Send_Data_Over_BLE                     0x10058050   Section        0  chat.o(i.Send_Data_Over_BLE)
+    i.Set_RF_FrontEnd                        0x100580d0   Section        0  system_bluenrg1.o(i.Set_RF_FrontEnd)
+    i.SysCount_Handler                       0x10058118   Section        0  clock.o(i.SysCount_Handler)
+    i.SysCtrl_GetWakeupResetReason           0x10058128   Section        0  bluenrg1_sysctrl.o(i.SysCtrl_GetWakeupResetReason)
+    i.SysCtrl_PeripheralClockCmd             0x100581c0   Section        0  bluenrg1_sysctrl.o(i.SysCtrl_PeripheralClockCmd)
+    i.SysTick_Handler                        0x100581d8   Section        0  bluenrg1_it.o(i.SysTick_Handler)
+    i.SystemInit                             0x100581e0   Section        0  system_bluenrg1.o(i.SystemInit)
+    i.UART_Cmd                               0x10058298   Section        0  bluenrg1_uart.o(i.UART_Cmd)
+    i.UART_GetFlagStatus                     0x100582b4   Section        0  bluenrg1_uart.o(i.UART_GetFlagStatus)
+    i.UART_GetITStatus                       0x100582d0   Section        0  bluenrg1_uart.o(i.UART_GetITStatus)
+    i.UART_Handler                           0x100582e4   Section        0  bluenrg1_it.o(i.UART_Handler)
+    i.UART_ITConfig                          0x100582ec   Section        0  bluenrg1_uart.o(i.UART_ITConfig)
+    i.UART_Init                              0x10058304   Section        0  bluenrg1_uart.o(i.UART_Init)
+    i.UART_ReceiveData                       0x1005843c   Section        0  bluenrg1_uart.o(i.UART_ReceiveData)
+    i.UART_RxFifoIrqLevelConfig              0x10058448   Section        0  bluenrg1_uart.o(i.UART_RxFifoIrqLevelConfig)
+    i.UART_SendData                          0x10058460   Section        0  bluenrg1_uart.o(i.UART_SendData)
+    i.WDG_Handler                            0x10058470   Section        0  system_bluenrg1.o(i.WDG_Handler)
+    i.__0printf$8                            0x10058474   Section        0  printf8.o(i.__0printf$8)
+    i.__low_level_init                       0x10058494   Section        0  system_bluenrg1.o(i.__low_level_init)
+    i.__scatterload_copy                     0x10058554   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x10058562   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x10058564   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i._printf_core                           0x10058574   Section        0  printf8.o(i._printf_core)
+    _printf_core                             0x10058575   Thumb Code  1020  printf8.o(i._printf_core)
+    i._printf_post_padding                   0x1005899c   Section        0  printf8.o(i._printf_post_padding)
+    _printf_post_padding                     0x1005899d   Thumb Code    32  printf8.o(i._printf_post_padding)
+    i._printf_pre_padding                    0x100589bc   Section        0  printf8.o(i._printf_pre_padding)
+    _printf_pre_padding                      0x100589bd   Thumb Code    44  printf8.o(i._printf_pre_padding)
+    i.aci_att_exchange_mtu_resp_event        0x100589e8   Section        0  bluenrg1_stack_init_if.o(i.aci_att_exchange_mtu_resp_event)
+    i.aci_att_exec_write_resp_event          0x100589ea   Section        0  bluenrg1_stack_init_if.o(i.aci_att_exec_write_resp_event)
+    i.aci_att_find_by_type_value_resp_event  0x100589ec   Section        0  bluenrg1_stack_init_if.o(i.aci_att_find_by_type_value_resp_event)
+    i.aci_att_find_info_resp_event           0x100589ee   Section        0  bluenrg1_stack_init_if.o(i.aci_att_find_info_resp_event)
+    i.aci_att_prepare_write_resp_event       0x100589f0   Section        0  bluenrg1_stack_init_if.o(i.aci_att_prepare_write_resp_event)
+    i.aci_att_read_blob_resp_event           0x100589f2   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_blob_resp_event)
+    i.aci_att_read_by_group_type_resp_event  0x100589f4   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_by_group_type_resp_event)
+    i.aci_att_read_by_type_resp_event        0x100589f6   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_by_type_resp_event)
+    i.aci_att_read_multiple_resp_event       0x100589f8   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_multiple_resp_event)
+    i.aci_att_read_resp_event                0x100589fa   Section        0  bluenrg1_stack_init_if.o(i.aci_att_read_resp_event)
+    i.aci_gap_addr_not_resolved_event        0x100589fc   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_addr_not_resolved_event)
+    i.aci_gap_authorization_req_event        0x100589fe   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_authorization_req_event)
+    i.aci_gap_bond_lost_event                0x10058a00   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_bond_lost_event)
+    i.aci_gap_keypress_notification_event    0x10058a02   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_keypress_notification_event)
+    i.aci_gap_limited_discoverable_event     0x10058a04   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_limited_discoverable_event)
+    i.aci_gap_numeric_comparison_value_event 0x10058a06   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_numeric_comparison_value_event)
+    i.aci_gap_pairing_complete_event         0x10058a08   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_pairing_complete_event)
+    i.aci_gap_pass_key_req_event             0x10058a0a   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_pass_key_req_event)
+    i.aci_gap_proc_complete_event            0x10058a0c   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_proc_complete_event)
+    i.aci_gap_slave_security_initiated_event 0x10058a0e   Section        0  bluenrg1_stack_init_if.o(i.aci_gap_slave_security_initiated_event)
+    i.aci_gatt_attribute_modified_event      0x10058a10   Section        0  chat.o(i.aci_gatt_attribute_modified_event)
+    i.aci_gatt_disc_read_char_by_uuid_resp_event 0x10058a1e   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_disc_read_char_by_uuid_resp_event)
+    i.aci_gatt_error_resp_event              0x10058a20   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_error_resp_event)
+    i.aci_gatt_indication_event              0x10058a22   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_indication_event)
+    i.aci_gatt_notification_event            0x10058a24   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_notification_event)
+    i.aci_gatt_prepare_write_permit_req_event 0x10058a26   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_prepare_write_permit_req_event)
+    i.aci_gatt_proc_complete_event           0x10058a28   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_proc_complete_event)
+    i.aci_gatt_proc_timeout_event            0x10058a2a   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_proc_timeout_event)
+    i.aci_gatt_read_multi_permit_req_event   0x10058a2c   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_read_multi_permit_req_event)
+    i.aci_gatt_read_permit_req_event         0x10058a2e   Section        0  chat.o(i.aci_gatt_read_permit_req_event)
+    i.aci_gatt_server_confirmation_event     0x10058a30   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_server_confirmation_event)
+    i.aci_gatt_tx_pool_available_event       0x10058a34   Section        0  chat.o(i.aci_gatt_tx_pool_available_event)
+    i.aci_gatt_write_permit_req_event        0x10058a44   Section        0  bluenrg1_stack_init_if.o(i.aci_gatt_write_permit_req_event)
+    i.aci_hal_end_of_radio_activity_event    0x10058a46   Section        0  chat.o(i.aci_hal_end_of_radio_activity_event)
+    i.aci_hal_fw_error_event                 0x10058a48   Section        0  ble_chat_main.o(i.aci_hal_fw_error_event)
+    i.aci_hal_scan_req_report_event          0x10058a5e   Section        0  bluenrg1_stack_init_if.o(i.aci_hal_scan_req_report_event)
+    i.aci_l2cap_command_reject_event         0x10058a60   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_command_reject_event)
+    i.aci_l2cap_connection_update_req_event  0x10058a62   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_req_event)
+    i.aci_l2cap_connection_update_resp_event 0x10058a64   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_resp_event)
+    i.aci_l2cap_proc_timeout_event           0x10058a66   Section        0  bluenrg1_stack_init_if.o(i.aci_l2cap_proc_timeout_event)
+    i.fputc                                  0x10058a68   Section        0  sdk_eval_com.o(i.fputc)
+    i.hci_data_buffer_overflow_event         0x10058a74   Section        0  bluenrg1_stack_init_if.o(i.hci_data_buffer_overflow_event)
+    i.hci_disconnection_complete_event       0x10058a78   Section        0  chat.o(i.hci_disconnection_complete_event)
+    i.hci_encryption_change_event            0x10058ac0   Section        0  bluenrg1_stack_init_if.o(i.hci_encryption_change_event)
+    i.hci_encryption_key_refresh_complete_event 0x10058ac2   Section        0  bluenrg1_stack_init_if.o(i.hci_encryption_key_refresh_complete_event)
+    i.hci_hardware_error_event               0x10058ac4   Section        0  ble_chat_main.o(i.hci_hardware_error_event)
+    i.hci_le_advertising_report_event        0x10058adc   Section        0  bluenrg1_stack_init_if.o(i.hci_le_advertising_report_event)
+    i.hci_le_connection_complete_event       0x10058ae0   Section        0  chat.o(i.hci_le_connection_complete_event)
+    i.hci_le_connection_update_complete_event 0x10058af4   Section        0  bluenrg1_stack_init_if.o(i.hci_le_connection_update_complete_event)
+    i.hci_le_data_length_change_event        0x10058af6   Section        0  bluenrg1_stack_init_if.o(i.hci_le_data_length_change_event)
+    i.hci_le_direct_advertising_report_event 0x10058af8   Section        0  bluenrg1_stack_init_if.o(i.hci_le_direct_advertising_report_event)
+    i.hci_le_enhanced_connection_complete_event 0x10058afa   Section        0  bluenrg1_stack_init_if.o(i.hci_le_enhanced_connection_complete_event)
+    i.hci_le_generate_dhkey_complete_event   0x10058afc   Section        0  bluenrg1_stack_init_if.o(i.hci_le_generate_dhkey_complete_event)
+    i.hci_le_long_term_key_request_event     0x10058afe   Section        0  bluenrg1_stack_init_if.o(i.hci_le_long_term_key_request_event)
+    i.hci_le_read_local_p256_public_key_complete_event 0x10058b00   Section        0  bluenrg1_stack_init_if.o(i.hci_le_read_local_p256_public_key_complete_event)
+    i.hci_le_read_remote_used_features_complete_event 0x10058b02   Section        0  bluenrg1_stack_init_if.o(i.hci_le_read_remote_used_features_complete_event)
+    i.hci_number_of_completed_packets_event  0x10058b04   Section        0  bluenrg1_stack_init_if.o(i.hci_number_of_completed_packets_event)
+    i.hci_read_remote_version_information_complete_event 0x10058b06   Section        0  bluenrg1_stack_init_if.o(i.hci_read_remote_version_information_complete_event)
+    i.main                                   0x10058b08   Section        0  ble_chat_main.o(i.main)
+    .constdata                               0x10058c24   Section        8  sdk_eval_config.o(.constdata)
+    .constdata                               0x10058c2c   Section        4  sdk_eval_config.o(.constdata)
+    .constdata                               0x10058c30   Section        4  sdk_eval_config.o(.constdata)
+    .constdata                               0x10058c34   Section        4  sdk_eval_config.o(.constdata)
+    .constdata                               0x10058c38   Section        4  sdk_eval_config.o(.constdata)
+    .constdata                               0x10058c3c   Section       52  ble_chat_main.o(.constdata)
     .noinit.stacklib_flash_data              0x1007f000   Section     2048  ble_chat_main.o(.noinit.stacklib_flash_data)
     .noinit.stacklib_stored_device_id_data   0x1007f800   Section       56  ble_chat_main.o(.noinit.stacklib_stored_device_id_data)
     .ota_sw_activation                       0x20000004   Section        4  system_bluenrg1.o(.ota_sw_activation)
@@ -1520,172 +1520,172 @@ Image Symbol Table
     hci_read_transmit_power_level            0x1005441b   Thumb Code    32  BLE_Static_Stack.o ABSOLUTE
     hci_reset                                0x1005443b   Thumb Code    10  BLE_Static_Stack.o ABSOLUTE
     hci_set_event_mask                       0x100544b5   Thumb Code    34  BLE_Static_Stack.o ABSOLUTE
-    __vector_table                           0x1005d800   Data         192  system_bluenrg1.o(.intvec)
-    CS_contextSave                           0x1005d8c1   Thumb Code    82  context_switch.o(. text)
-    CS_contextRestore                        0x1005d913   Thumb Code    42  context_switch.o(. text)
-    __main                                   0x1005d961   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
-    _main_stk                                0x1005d961   Thumb Code     0  entry3.o(.ARM.Collect$$$$00000002)
-    _main_scatterload                        0x1005d965   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
-    __main_after_scatterload                 0x1005d969   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
-    _main_clock                              0x1005d969   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
-    _main_cpp_init                           0x1005d969   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
-    _main_init                               0x1005d969   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
-    __rt_final_cpp                           0x1005d971   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
-    __rt_final_exit                          0x1005d971   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
-    __aeabi_uidiv                            0x1005d975   Thumb Code     0  uidiv.o(.text)
-    __aeabi_uidivmod                         0x1005d975   Thumb Code    44  uidiv.o(.text)
-    ___aeabi_memcpy8$ret                     0x1005d9a1   Thumb Code     0  memcpy.o(.text)
-    __aeabi_memcpy                           0x1005d9a1   Thumb Code    40  memcpy.o(.text)
-    __aeabi_memcpy4                          0x1005d9a1   Thumb Code     0  memcpy.o(.text)
-    memcpy                                   0x1005d9a1   Thumb Code     0  memcpy.o(.text)
-    __aeabi_uldivmod                         0x1005d9c9   Thumb Code    96  uldiv.o(.text)
-    __aeabi_llsl                             0x1005da29   Thumb Code    32  llshl.o(.text)
-    _ll_shift_l                              0x1005da29   Thumb Code     0  llshl.o(.text)
-    __scatterload                            0x1005da49   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x1005da49   Thumb Code     0  init.o(.text)
-    __aeabi_llsr                             0x1005da6d   Thumb Code    34  llushr.o(.text)
-    _ll_ushift_r                             0x1005da6d   Thumb Code     0  llushr.o(.text)
-    __decompress                             0x1005da8f   Thumb Code     0  __dczerorl.o(.text)
-    __decompress0                            0x1005da8f   Thumb Code    58  __dczerorl.o(.text)
-    ADC_Handler                              0x1005dac9   Thumb Code     2  system_bluenrg1.o(i.ADC_Handler)
-    APP_Tick                                 0x1005dacd   Thumb Code    28  chat.o(i.APP_Tick)
-    Add_Chat_Service                         0x1005daed   Thumb Code   176  gatt_db.o(i.Add_Chat_Service)
-    Attribute_Modified_CB                    0x1005dc39   Thumb Code    62  gatt_db.o(i.Attribute_Modified_CB)
-    BOR_ConfigSave                           0x1005dc85   Thumb Code    54  system_bluenrg1.o(i.BOR_ConfigSave)
-    BlueNRG_Stack_Initialization             0x1005dcc5   Thumb Code   244  bluenrg1_stack_init_if.o(i.BlueNRG_Stack_Initialization)
-    Blue_Handler                             0x1005dea5   Thumb Code     8  bluenrg1_it.o(i.Blue_Handler)
-    CHAT_DeviceInit                          0x1005dead   Thumb Code   180  chat.o(i.CHAT_DeviceInit)
-    Clock_Init                               0x1005e0c9   Thumb Code    32  clock.o(i.Clock_Init)
-    DMA_Handler                              0x1005e0f5   Thumb Code     2  system_bluenrg1.o(i.DMA_Handler)
-    DeviceConfiguration                      0x1005e0f9   Thumb Code   298  system_bluenrg1.o(i.DeviceConfiguration)
-    GPIO_Handler                             0x1005e25d   Thumb Code     2  bluenrg1_it.o(i.GPIO_Handler)
-    GPIO_Init                                0x1005e261   Thumb Code   206  bluenrg1_gpio.o(i.GPIO_Init)
-    GPIO_ReadBit                             0x1005e335   Thumb Code    18  bluenrg1_gpio.o(i.GPIO_ReadBit)
-    Get_ButtonGpioPin                        0x1005e349   Thumb Code    40  sdk_eval_button.o(i.Get_ButtonGpioPin)
-    HAL_GetPartInfo                          0x1005e375   Thumb Code    76  miscutil.o(i.HAL_GetPartInfo)
-    HAL_VTimerTimeoutCallback                0x1005e3d5   Thumb Code     2  bluenrg1_stack_init_if.o(i.HAL_VTimerTimeoutCallback)
-    HardFault_Handler                        0x1005e3d7   Thumb Code     2  bluenrg1_it.o(i.HardFault_Handler)
-    I2C1_Handler                             0x1005e3d9   Thumb Code     2  system_bluenrg1.o(i.I2C1_Handler)
-    I2C2_Handler                             0x1005e3db   Thumb Code     2  system_bluenrg1.o(i.I2C2_Handler)
-    MFT1A_Handler                            0x1005e3dd   Thumb Code     2  system_bluenrg1.o(i.MFT1A_Handler)
-    MFT1B_Handler                            0x1005e3df   Thumb Code     2  system_bluenrg1.o(i.MFT1B_Handler)
-    MFT2A_Handler                            0x1005e3e1   Thumb Code     2  system_bluenrg1.o(i.MFT2A_Handler)
-    MFT2B_Handler                            0x1005e3e3   Thumb Code     2  system_bluenrg1.o(i.MFT2B_Handler)
-    Make_Connection                          0x1005e3e5   Thumb Code   116  chat.o(i.Make_Connection)
-    NMI_Handler                              0x1005e4e5   Thumb Code     2  bluenrg1_it.o(i.NMI_Handler)
-    NVIC_Init                                0x1005e4e9   Thumb Code   124  misc.o(i.NVIC_Init)
-    NVM_Handler                              0x1005e5cd   Thumb Code     2  system_bluenrg1.o(i.NVM_Handler)
-    OTA_Jump_To_Service_Manager_Application  0x1005e5d1   Thumb Code    10  ota_btl.o(i.OTA_Jump_To_Service_Manager_Application)
-    Osal_MemCpy                              0x1005e5e5   Thumb Code     8  osal.o(i.Osal_MemCpy)
-    PKA_Handler                              0x1005e5ed   Thumb Code     2  system_bluenrg1.o(i.PKA_Handler)
-    PendSV_Handler                           0x1005e5ef   Thumb Code     2  system_bluenrg1.o(i.PendSV_Handler)
-    Process_InputData                        0x1005e5f1   Thumb Code    98  chat.o(i.Process_InputData)
-    RESET_HANDLER                            0x1005e665   Thumb Code    26  system_bluenrg1.o(i.RESET_HANDLER)
-    RTC_Handler                              0x1005e685   Thumb Code     2  system_bluenrg1.o(i.RTC_Handler)
-    SET_BORconfigStatus                      0x1005e689   Thumb Code    54  system_bluenrg1.o(i.SET_BORconfigStatus)
-    SPI_Handler                              0x1005e6c5   Thumb Code     2  system_bluenrg1.o(i.SPI_Handler)
-    SVC_Handler                              0x1005e6c7   Thumb Code     2  bluenrg1_it.o(i.SVC_Handler)
-    SdkEvalComIOConfig                       0x1005e6c9   Thumb Code    22  sdk_eval_com.o(i.SdkEvalComIOConfig)
-    SdkEvalComIOReceiveData                  0x1005e6e5   Thumb Code    12  sdk_eval_com.o(i.SdkEvalComIOReceiveData)
-    SdkEvalComIOSendData                     0x1005e6f5   Thumb Code     8  sdk_eval_com.o(i.SdkEvalComIOSendData)
-    SdkEvalComIOUartIrqHandler               0x1005e6fd   Thumb Code    42  sdk_eval_com.o(i.SdkEvalComIOUartIrqHandler)
-    SdkEvalComUartInit                       0x1005e729   Thumb Code   144  sdk_eval_com.o(i.SdkEvalComUartInit)
-    SdkEvalComUartIrqConfig                  0x1005e7c9   Thumb Code    32  sdk_eval_com.o(i.SdkEvalComUartIrqConfig)
-    SdkEvalGetVersion                        0x1005e7e9   Thumb Code     6  sdk_eval_config.o(i.SdkEvalGetVersion)
-    SdkEvalIdentification                    0x1005e7f5   Thumb Code     8  sdk_eval_config.o(i.SdkEvalIdentification)
-    SdkEvalPushButtonGetState                0x1005e801   Thumb Code    18  sdk_eval_button.o(i.SdkEvalPushButtonGetState)
-    SdkEvalPushButtonInit                    0x1005e813   Thumb Code    38  sdk_eval_button.o(i.SdkEvalPushButtonInit)
-    Send_Data_Over_BLE                       0x1005e851   Thumb Code   108  chat.o(i.Send_Data_Over_BLE)
-    Set_RF_FrontEnd                          0x1005e8d1   Thumb Code    66  system_bluenrg1.o(i.Set_RF_FrontEnd)
-    SysCount_Handler                         0x1005e919   Thumb Code    10  clock.o(i.SysCount_Handler)
-    SysCtrl_GetWakeupResetReason             0x1005e929   Thumb Code   138  bluenrg1_sysctrl.o(i.SysCtrl_GetWakeupResetReason)
-    SysCtrl_PeripheralClockCmd               0x1005e9c1   Thumb Code    18  bluenrg1_sysctrl.o(i.SysCtrl_PeripheralClockCmd)
-    SysTick_Handler                          0x1005e9d9   Thumb Code     8  bluenrg1_it.o(i.SysTick_Handler)
-    SystemInit                               0x1005e9e1   Thumb Code   170  system_bluenrg1.o(i.SystemInit)
-    UART_Cmd                                 0x1005ea99   Thumb Code    22  bluenrg1_uart.o(i.UART_Cmd)
-    UART_GetFlagStatus                       0x1005eab5   Thumb Code    24  bluenrg1_uart.o(i.UART_GetFlagStatus)
-    UART_GetITStatus                         0x1005ead1   Thumb Code    16  bluenrg1_uart.o(i.UART_GetITStatus)
-    UART_Handler                             0x1005eae5   Thumb Code     8  bluenrg1_it.o(i.UART_Handler)
-    UART_ITConfig                            0x1005eaed   Thumb Code    18  bluenrg1_uart.o(i.UART_ITConfig)
-    UART_Init                                0x1005eb05   Thumb Code   302  bluenrg1_uart.o(i.UART_Init)
-    UART_ReceiveData                         0x1005ec3d   Thumb Code     8  bluenrg1_uart.o(i.UART_ReceiveData)
-    UART_RxFifoIrqLevelConfig                0x1005ec49   Thumb Code    18  bluenrg1_uart.o(i.UART_RxFifoIrqLevelConfig)
-    UART_SendData                            0x1005ec61   Thumb Code    10  bluenrg1_uart.o(i.UART_SendData)
-    WDG_Handler                              0x1005ec71   Thumb Code     2  system_bluenrg1.o(i.WDG_Handler)
-    __0printf$8                              0x1005ec75   Thumb Code    24  printf8.o(i.__0printf$8)
-    __1printf$8                              0x1005ec75   Thumb Code     0  printf8.o(i.__0printf$8)
-    __2printf                                0x1005ec75   Thumb Code     0  printf8.o(i.__0printf$8)
-    __low_level_init                         0x1005ec95   Thumb Code   162  system_bluenrg1.o(i.__low_level_init)
-    __scatterload_copy                       0x1005ed55   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x1005ed63   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x1005ed65   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    aci_att_exchange_mtu_resp_event          0x1005f1e9   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_exchange_mtu_resp_event)
-    aci_att_exec_write_resp_event            0x1005f1eb   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_exec_write_resp_event)
-    aci_att_find_by_type_value_resp_event    0x1005f1ed   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_find_by_type_value_resp_event)
-    aci_att_find_info_resp_event             0x1005f1ef   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_find_info_resp_event)
-    aci_att_prepare_write_resp_event         0x1005f1f1   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_prepare_write_resp_event)
-    aci_att_read_blob_resp_event             0x1005f1f3   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_blob_resp_event)
-    aci_att_read_by_group_type_resp_event    0x1005f1f5   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_by_group_type_resp_event)
-    aci_att_read_by_type_resp_event          0x1005f1f7   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_by_type_resp_event)
-    aci_att_read_multiple_resp_event         0x1005f1f9   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_multiple_resp_event)
-    aci_att_read_resp_event                  0x1005f1fb   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_resp_event)
-    aci_gap_addr_not_resolved_event          0x1005f1fd   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_addr_not_resolved_event)
-    aci_gap_authorization_req_event          0x1005f1ff   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_authorization_req_event)
-    aci_gap_bond_lost_event                  0x1005f201   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_bond_lost_event)
-    aci_gap_keypress_notification_event      0x1005f203   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_keypress_notification_event)
-    aci_gap_limited_discoverable_event       0x1005f205   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_limited_discoverable_event)
-    aci_gap_numeric_comparison_value_event   0x1005f207   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_numeric_comparison_value_event)
-    aci_gap_pairing_complete_event           0x1005f209   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_pairing_complete_event)
-    aci_gap_pass_key_req_event               0x1005f20b   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_pass_key_req_event)
-    aci_gap_proc_complete_event              0x1005f20d   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_proc_complete_event)
-    aci_gap_slave_security_initiated_event   0x1005f20f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_slave_security_initiated_event)
-    aci_gatt_attribute_modified_event        0x1005f211   Thumb Code    14  chat.o(i.aci_gatt_attribute_modified_event)
-    aci_gatt_disc_read_char_by_uuid_resp_event 0x1005f21f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_disc_read_char_by_uuid_resp_event)
-    aci_gatt_error_resp_event                0x1005f221   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_error_resp_event)
-    aci_gatt_indication_event                0x1005f223   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_indication_event)
-    aci_gatt_notification_event              0x1005f225   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_notification_event)
-    aci_gatt_prepare_write_permit_req_event  0x1005f227   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_prepare_write_permit_req_event)
-    aci_gatt_proc_complete_event             0x1005f229   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_proc_complete_event)
-    aci_gatt_proc_timeout_event              0x1005f22b   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_proc_timeout_event)
-    aci_gatt_read_multi_permit_req_event     0x1005f22d   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_read_multi_permit_req_event)
-    aci_gatt_read_permit_req_event           0x1005f22f   Thumb Code     2  chat.o(i.aci_gatt_read_permit_req_event)
-    aci_gatt_server_confirmation_event       0x1005f231   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_server_confirmation_event)
-    aci_gatt_tx_pool_available_event         0x1005f235   Thumb Code    12  chat.o(i.aci_gatt_tx_pool_available_event)
-    aci_gatt_write_permit_req_event          0x1005f245   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_write_permit_req_event)
-    aci_hal_end_of_radio_activity_event      0x1005f247   Thumb Code     2  chat.o(i.aci_hal_end_of_radio_activity_event)
-    aci_hal_fw_error_event                   0x1005f249   Thumb Code    22  ble_chat_main.o(i.aci_hal_fw_error_event)
-    aci_hal_scan_req_report_event            0x1005f25f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_hal_scan_req_report_event)
-    aci_l2cap_command_reject_event           0x1005f261   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_command_reject_event)
-    aci_l2cap_connection_update_req_event    0x1005f263   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_req_event)
-    aci_l2cap_connection_update_resp_event   0x1005f265   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_resp_event)
-    aci_l2cap_proc_timeout_event             0x1005f267   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_proc_timeout_event)
-    fputc                                    0x1005f269   Thumb Code    12  sdk_eval_com.o(i.fputc)
-    hci_data_buffer_overflow_event           0x1005f275   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_data_buffer_overflow_event)
-    hci_disconnection_complete_event         0x1005f279   Thumb Code    68  chat.o(i.hci_disconnection_complete_event)
-    hci_encryption_change_event              0x1005f2c1   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_encryption_change_event)
-    hci_encryption_key_refresh_complete_event 0x1005f2c3   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_encryption_key_refresh_complete_event)
-    hci_hardware_error_event                 0x1005f2c5   Thumb Code    16  ble_chat_main.o(i.hci_hardware_error_event)
-    hci_le_advertising_report_event          0x1005f2dd   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_advertising_report_event)
-    hci_le_connection_complete_event         0x1005f2e1   Thumb Code    14  chat.o(i.hci_le_connection_complete_event)
-    hci_le_connection_update_complete_event  0x1005f2f5   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_connection_update_complete_event)
-    hci_le_data_length_change_event          0x1005f2f7   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_data_length_change_event)
-    hci_le_direct_advertising_report_event   0x1005f2f9   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_direct_advertising_report_event)
-    hci_le_enhanced_connection_complete_event 0x1005f2fb   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_enhanced_connection_complete_event)
-    hci_le_generate_dhkey_complete_event     0x1005f2fd   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_generate_dhkey_complete_event)
-    hci_le_long_term_key_request_event       0x1005f2ff   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_long_term_key_request_event)
-    hci_le_read_local_p256_public_key_complete_event 0x1005f301   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_read_local_p256_public_key_complete_event)
-    hci_le_read_remote_used_features_complete_event 0x1005f303   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_read_remote_used_features_complete_event)
-    hci_number_of_completed_packets_event    0x1005f305   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_number_of_completed_packets_event)
-    hci_read_remote_version_information_complete_event 0x1005f307   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_read_remote_version_information_complete_event)
-    main                                     0x1005f309   Thumb Code    96  ble_chat_main.o(i.main)
-    s_vectnButtonPinVersion                  0x1005f424   Data           8  sdk_eval_config.o(.constdata)
-    s_UartTxPinVersion                       0x1005f42c   Data           4  sdk_eval_config.o(.constdata)
-    s_UartTxModeVersion                      0x1005f430   Data           4  sdk_eval_config.o(.constdata)
-    s_UartRxPinVersion                       0x1005f434   Data           4  sdk_eval_config.o(.constdata)
-    s_UartRxModeVersion                      0x1005f438   Data           4  sdk_eval_config.o(.constdata)
-    BlueNRG_Stack_Init_params                0x1005f43c   Data          52  ble_chat_main.o(.constdata)
-    Region$$Table$$Base                      0x1005f470   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x1005f510   Number         0  anon$$obj.o(Region$$Table)
+    __vector_table                           0x10057000   Data         192  system_bluenrg1.o(.intvec)
+    CS_contextSave                           0x100570c1   Thumb Code    82  context_switch.o(. text)
+    CS_contextRestore                        0x10057113   Thumb Code    42  context_switch.o(. text)
+    __main                                   0x10057161   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x10057161   Thumb Code     0  entry3.o(.ARM.Collect$$$$00000002)
+    _main_scatterload                        0x10057165   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x10057169   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x10057169   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x10057169   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x10057169   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x10057171   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x10057171   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    __aeabi_uidiv                            0x10057175   Thumb Code     0  uidiv.o(.text)
+    __aeabi_uidivmod                         0x10057175   Thumb Code    44  uidiv.o(.text)
+    ___aeabi_memcpy8$ret                     0x100571a1   Thumb Code     0  memcpy.o(.text)
+    __aeabi_memcpy                           0x100571a1   Thumb Code    40  memcpy.o(.text)
+    __aeabi_memcpy4                          0x100571a1   Thumb Code     0  memcpy.o(.text)
+    memcpy                                   0x100571a1   Thumb Code     0  memcpy.o(.text)
+    __aeabi_uldivmod                         0x100571c9   Thumb Code    96  uldiv.o(.text)
+    __aeabi_llsl                             0x10057229   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x10057229   Thumb Code     0  llshl.o(.text)
+    __scatterload                            0x10057249   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x10057249   Thumb Code     0  init.o(.text)
+    __aeabi_llsr                             0x1005726d   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x1005726d   Thumb Code     0  llushr.o(.text)
+    __decompress                             0x1005728f   Thumb Code     0  __dczerorl.o(.text)
+    __decompress0                            0x1005728f   Thumb Code    58  __dczerorl.o(.text)
+    ADC_Handler                              0x100572c9   Thumb Code     2  system_bluenrg1.o(i.ADC_Handler)
+    APP_Tick                                 0x100572cd   Thumb Code    28  chat.o(i.APP_Tick)
+    Add_Chat_Service                         0x100572ed   Thumb Code   176  gatt_db.o(i.Add_Chat_Service)
+    Attribute_Modified_CB                    0x10057439   Thumb Code    62  gatt_db.o(i.Attribute_Modified_CB)
+    BOR_ConfigSave                           0x10057485   Thumb Code    54  system_bluenrg1.o(i.BOR_ConfigSave)
+    BlueNRG_Stack_Initialization             0x100574c5   Thumb Code   244  bluenrg1_stack_init_if.o(i.BlueNRG_Stack_Initialization)
+    Blue_Handler                             0x100576a5   Thumb Code     8  bluenrg1_it.o(i.Blue_Handler)
+    CHAT_DeviceInit                          0x100576ad   Thumb Code   180  chat.o(i.CHAT_DeviceInit)
+    Clock_Init                               0x100578c9   Thumb Code    32  clock.o(i.Clock_Init)
+    DMA_Handler                              0x100578f5   Thumb Code     2  system_bluenrg1.o(i.DMA_Handler)
+    DeviceConfiguration                      0x100578f9   Thumb Code   298  system_bluenrg1.o(i.DeviceConfiguration)
+    GPIO_Handler                             0x10057a5d   Thumb Code     2  bluenrg1_it.o(i.GPIO_Handler)
+    GPIO_Init                                0x10057a61   Thumb Code   206  bluenrg1_gpio.o(i.GPIO_Init)
+    GPIO_ReadBit                             0x10057b35   Thumb Code    18  bluenrg1_gpio.o(i.GPIO_ReadBit)
+    Get_ButtonGpioPin                        0x10057b49   Thumb Code    40  sdk_eval_button.o(i.Get_ButtonGpioPin)
+    HAL_GetPartInfo                          0x10057b75   Thumb Code    76  miscutil.o(i.HAL_GetPartInfo)
+    HAL_VTimerTimeoutCallback                0x10057bd5   Thumb Code     2  bluenrg1_stack_init_if.o(i.HAL_VTimerTimeoutCallback)
+    HardFault_Handler                        0x10057bd7   Thumb Code     2  bluenrg1_it.o(i.HardFault_Handler)
+    I2C1_Handler                             0x10057bd9   Thumb Code     2  system_bluenrg1.o(i.I2C1_Handler)
+    I2C2_Handler                             0x10057bdb   Thumb Code     2  system_bluenrg1.o(i.I2C2_Handler)
+    MFT1A_Handler                            0x10057bdd   Thumb Code     2  system_bluenrg1.o(i.MFT1A_Handler)
+    MFT1B_Handler                            0x10057bdf   Thumb Code     2  system_bluenrg1.o(i.MFT1B_Handler)
+    MFT2A_Handler                            0x10057be1   Thumb Code     2  system_bluenrg1.o(i.MFT2A_Handler)
+    MFT2B_Handler                            0x10057be3   Thumb Code     2  system_bluenrg1.o(i.MFT2B_Handler)
+    Make_Connection                          0x10057be5   Thumb Code   116  chat.o(i.Make_Connection)
+    NMI_Handler                              0x10057ce5   Thumb Code     2  bluenrg1_it.o(i.NMI_Handler)
+    NVIC_Init                                0x10057ce9   Thumb Code   124  misc.o(i.NVIC_Init)
+    NVM_Handler                              0x10057dcd   Thumb Code     2  system_bluenrg1.o(i.NVM_Handler)
+    OTA_Jump_To_Service_Manager_Application  0x10057dd1   Thumb Code    10  ota_btl.o(i.OTA_Jump_To_Service_Manager_Application)
+    Osal_MemCpy                              0x10057de5   Thumb Code     8  osal.o(i.Osal_MemCpy)
+    PKA_Handler                              0x10057ded   Thumb Code     2  system_bluenrg1.o(i.PKA_Handler)
+    PendSV_Handler                           0x10057def   Thumb Code     2  system_bluenrg1.o(i.PendSV_Handler)
+    Process_InputData                        0x10057df1   Thumb Code    98  chat.o(i.Process_InputData)
+    RESET_HANDLER                            0x10057e65   Thumb Code    26  system_bluenrg1.o(i.RESET_HANDLER)
+    RTC_Handler                              0x10057e85   Thumb Code     2  system_bluenrg1.o(i.RTC_Handler)
+    SET_BORconfigStatus                      0x10057e89   Thumb Code    54  system_bluenrg1.o(i.SET_BORconfigStatus)
+    SPI_Handler                              0x10057ec5   Thumb Code     2  system_bluenrg1.o(i.SPI_Handler)
+    SVC_Handler                              0x10057ec7   Thumb Code     2  bluenrg1_it.o(i.SVC_Handler)
+    SdkEvalComIOConfig                       0x10057ec9   Thumb Code    22  sdk_eval_com.o(i.SdkEvalComIOConfig)
+    SdkEvalComIOReceiveData                  0x10057ee5   Thumb Code    12  sdk_eval_com.o(i.SdkEvalComIOReceiveData)
+    SdkEvalComIOSendData                     0x10057ef5   Thumb Code     8  sdk_eval_com.o(i.SdkEvalComIOSendData)
+    SdkEvalComIOUartIrqHandler               0x10057efd   Thumb Code    42  sdk_eval_com.o(i.SdkEvalComIOUartIrqHandler)
+    SdkEvalComUartInit                       0x10057f29   Thumb Code   144  sdk_eval_com.o(i.SdkEvalComUartInit)
+    SdkEvalComUartIrqConfig                  0x10057fc9   Thumb Code    32  sdk_eval_com.o(i.SdkEvalComUartIrqConfig)
+    SdkEvalGetVersion                        0x10057fe9   Thumb Code     6  sdk_eval_config.o(i.SdkEvalGetVersion)
+    SdkEvalIdentification                    0x10057ff5   Thumb Code     8  sdk_eval_config.o(i.SdkEvalIdentification)
+    SdkEvalPushButtonGetState                0x10058001   Thumb Code    18  sdk_eval_button.o(i.SdkEvalPushButtonGetState)
+    SdkEvalPushButtonInit                    0x10058013   Thumb Code    38  sdk_eval_button.o(i.SdkEvalPushButtonInit)
+    Send_Data_Over_BLE                       0x10058051   Thumb Code   108  chat.o(i.Send_Data_Over_BLE)
+    Set_RF_FrontEnd                          0x100580d1   Thumb Code    66  system_bluenrg1.o(i.Set_RF_FrontEnd)
+    SysCount_Handler                         0x10058119   Thumb Code    10  clock.o(i.SysCount_Handler)
+    SysCtrl_GetWakeupResetReason             0x10058129   Thumb Code   138  bluenrg1_sysctrl.o(i.SysCtrl_GetWakeupResetReason)
+    SysCtrl_PeripheralClockCmd               0x100581c1   Thumb Code    18  bluenrg1_sysctrl.o(i.SysCtrl_PeripheralClockCmd)
+    SysTick_Handler                          0x100581d9   Thumb Code     8  bluenrg1_it.o(i.SysTick_Handler)
+    SystemInit                               0x100581e1   Thumb Code   170  system_bluenrg1.o(i.SystemInit)
+    UART_Cmd                                 0x10058299   Thumb Code    22  bluenrg1_uart.o(i.UART_Cmd)
+    UART_GetFlagStatus                       0x100582b5   Thumb Code    24  bluenrg1_uart.o(i.UART_GetFlagStatus)
+    UART_GetITStatus                         0x100582d1   Thumb Code    16  bluenrg1_uart.o(i.UART_GetITStatus)
+    UART_Handler                             0x100582e5   Thumb Code     8  bluenrg1_it.o(i.UART_Handler)
+    UART_ITConfig                            0x100582ed   Thumb Code    18  bluenrg1_uart.o(i.UART_ITConfig)
+    UART_Init                                0x10058305   Thumb Code   302  bluenrg1_uart.o(i.UART_Init)
+    UART_ReceiveData                         0x1005843d   Thumb Code     8  bluenrg1_uart.o(i.UART_ReceiveData)
+    UART_RxFifoIrqLevelConfig                0x10058449   Thumb Code    18  bluenrg1_uart.o(i.UART_RxFifoIrqLevelConfig)
+    UART_SendData                            0x10058461   Thumb Code    10  bluenrg1_uart.o(i.UART_SendData)
+    WDG_Handler                              0x10058471   Thumb Code     2  system_bluenrg1.o(i.WDG_Handler)
+    __0printf$8                              0x10058475   Thumb Code    24  printf8.o(i.__0printf$8)
+    __1printf$8                              0x10058475   Thumb Code     0  printf8.o(i.__0printf$8)
+    __2printf                                0x10058475   Thumb Code     0  printf8.o(i.__0printf$8)
+    __low_level_init                         0x10058495   Thumb Code   162  system_bluenrg1.o(i.__low_level_init)
+    __scatterload_copy                       0x10058555   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x10058563   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x10058565   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    aci_att_exchange_mtu_resp_event          0x100589e9   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_exchange_mtu_resp_event)
+    aci_att_exec_write_resp_event            0x100589eb   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_exec_write_resp_event)
+    aci_att_find_by_type_value_resp_event    0x100589ed   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_find_by_type_value_resp_event)
+    aci_att_find_info_resp_event             0x100589ef   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_find_info_resp_event)
+    aci_att_prepare_write_resp_event         0x100589f1   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_prepare_write_resp_event)
+    aci_att_read_blob_resp_event             0x100589f3   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_blob_resp_event)
+    aci_att_read_by_group_type_resp_event    0x100589f5   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_by_group_type_resp_event)
+    aci_att_read_by_type_resp_event          0x100589f7   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_by_type_resp_event)
+    aci_att_read_multiple_resp_event         0x100589f9   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_multiple_resp_event)
+    aci_att_read_resp_event                  0x100589fb   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_att_read_resp_event)
+    aci_gap_addr_not_resolved_event          0x100589fd   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_addr_not_resolved_event)
+    aci_gap_authorization_req_event          0x100589ff   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_authorization_req_event)
+    aci_gap_bond_lost_event                  0x10058a01   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_bond_lost_event)
+    aci_gap_keypress_notification_event      0x10058a03   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_keypress_notification_event)
+    aci_gap_limited_discoverable_event       0x10058a05   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_limited_discoverable_event)
+    aci_gap_numeric_comparison_value_event   0x10058a07   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_numeric_comparison_value_event)
+    aci_gap_pairing_complete_event           0x10058a09   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_pairing_complete_event)
+    aci_gap_pass_key_req_event               0x10058a0b   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_pass_key_req_event)
+    aci_gap_proc_complete_event              0x10058a0d   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_proc_complete_event)
+    aci_gap_slave_security_initiated_event   0x10058a0f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gap_slave_security_initiated_event)
+    aci_gatt_attribute_modified_event        0x10058a11   Thumb Code    14  chat.o(i.aci_gatt_attribute_modified_event)
+    aci_gatt_disc_read_char_by_uuid_resp_event 0x10058a1f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_disc_read_char_by_uuid_resp_event)
+    aci_gatt_error_resp_event                0x10058a21   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_error_resp_event)
+    aci_gatt_indication_event                0x10058a23   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_indication_event)
+    aci_gatt_notification_event              0x10058a25   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_notification_event)
+    aci_gatt_prepare_write_permit_req_event  0x10058a27   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_prepare_write_permit_req_event)
+    aci_gatt_proc_complete_event             0x10058a29   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_proc_complete_event)
+    aci_gatt_proc_timeout_event              0x10058a2b   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_proc_timeout_event)
+    aci_gatt_read_multi_permit_req_event     0x10058a2d   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_read_multi_permit_req_event)
+    aci_gatt_read_permit_req_event           0x10058a2f   Thumb Code     2  chat.o(i.aci_gatt_read_permit_req_event)
+    aci_gatt_server_confirmation_event       0x10058a31   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_server_confirmation_event)
+    aci_gatt_tx_pool_available_event         0x10058a35   Thumb Code    12  chat.o(i.aci_gatt_tx_pool_available_event)
+    aci_gatt_write_permit_req_event          0x10058a45   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_gatt_write_permit_req_event)
+    aci_hal_end_of_radio_activity_event      0x10058a47   Thumb Code     2  chat.o(i.aci_hal_end_of_radio_activity_event)
+    aci_hal_fw_error_event                   0x10058a49   Thumb Code    22  ble_chat_main.o(i.aci_hal_fw_error_event)
+    aci_hal_scan_req_report_event            0x10058a5f   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_hal_scan_req_report_event)
+    aci_l2cap_command_reject_event           0x10058a61   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_command_reject_event)
+    aci_l2cap_connection_update_req_event    0x10058a63   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_req_event)
+    aci_l2cap_connection_update_resp_event   0x10058a65   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_connection_update_resp_event)
+    aci_l2cap_proc_timeout_event             0x10058a67   Thumb Code     2  bluenrg1_stack_init_if.o(i.aci_l2cap_proc_timeout_event)
+    fputc                                    0x10058a69   Thumb Code    12  sdk_eval_com.o(i.fputc)
+    hci_data_buffer_overflow_event           0x10058a75   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_data_buffer_overflow_event)
+    hci_disconnection_complete_event         0x10058a79   Thumb Code    68  chat.o(i.hci_disconnection_complete_event)
+    hci_encryption_change_event              0x10058ac1   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_encryption_change_event)
+    hci_encryption_key_refresh_complete_event 0x10058ac3   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_encryption_key_refresh_complete_event)
+    hci_hardware_error_event                 0x10058ac5   Thumb Code    16  ble_chat_main.o(i.hci_hardware_error_event)
+    hci_le_advertising_report_event          0x10058add   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_advertising_report_event)
+    hci_le_connection_complete_event         0x10058ae1   Thumb Code    14  chat.o(i.hci_le_connection_complete_event)
+    hci_le_connection_update_complete_event  0x10058af5   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_connection_update_complete_event)
+    hci_le_data_length_change_event          0x10058af7   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_data_length_change_event)
+    hci_le_direct_advertising_report_event   0x10058af9   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_direct_advertising_report_event)
+    hci_le_enhanced_connection_complete_event 0x10058afb   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_enhanced_connection_complete_event)
+    hci_le_generate_dhkey_complete_event     0x10058afd   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_generate_dhkey_complete_event)
+    hci_le_long_term_key_request_event       0x10058aff   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_long_term_key_request_event)
+    hci_le_read_local_p256_public_key_complete_event 0x10058b01   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_read_local_p256_public_key_complete_event)
+    hci_le_read_remote_used_features_complete_event 0x10058b03   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_le_read_remote_used_features_complete_event)
+    hci_number_of_completed_packets_event    0x10058b05   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_number_of_completed_packets_event)
+    hci_read_remote_version_information_complete_event 0x10058b07   Thumb Code     2  bluenrg1_stack_init_if.o(i.hci_read_remote_version_information_complete_event)
+    main                                     0x10058b09   Thumb Code    96  ble_chat_main.o(i.main)
+    s_vectnButtonPinVersion                  0x10058c24   Data           8  sdk_eval_config.o(.constdata)
+    s_UartTxPinVersion                       0x10058c2c   Data           4  sdk_eval_config.o(.constdata)
+    s_UartTxModeVersion                      0x10058c30   Data           4  sdk_eval_config.o(.constdata)
+    s_UartRxPinVersion                       0x10058c34   Data           4  sdk_eval_config.o(.constdata)
+    s_UartRxModeVersion                      0x10058c38   Data           4  sdk_eval_config.o(.constdata)
+    BlueNRG_Stack_Init_params                0x10058c3c   Data          52  ble_chat_main.o(.constdata)
+    Region$$Table$$Base                      0x10058c70   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x10058d10   Number         0  anon$$obj.o(Region$$Table)
     stacklib_flash_data                      0x1007f000   Data        2048  ble_chat_main.o(.noinit.stacklib_flash_data)
     stacklib_stored_device_id_data           0x1007f800   Data          56  ble_chat_main.o(.noinit.stacklib_stored_device_id_data)
     ota_sw_activation                        0x20000004   Data           4  system_bluenrg1.o(.ota_sw_activation)
@@ -1719,17 +1719,17 @@ Image Symbol Table
 
 Memory Map of the image
 
-  Image Entry point : 0x1005d961
+  Image Entry point : 0x10057161
 
-  Load Region LR_IROM2 (Base: 0x10040000, Size: 0x00000000, Max: 0x0001d800, ABSOLUTE)
+  Load Region LR_IROM2 (Base: 0x10040000, Size: 0x00000000, Max: 0x00017000, ABSOLUTE)
 
-    Execution Region REGION_FLASH_BOOTLOADER (Base: 0x10040000, Size: 0x00000000, Max: 0x0001d800, ABSOLUTE)
+    Execution Region REGION_FLASH_BOOTLOADER (Base: 0x10040000, Size: 0x00000000, Max: 0x00017000, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
 
-  Load Region LR_IROM1 (Base: 0x1005d800, Size: 0x00001f74, Max: 0x00021800, ABSOLUTE, COMPRESSED[0x00001d70])
+  Load Region LR_IROM1 (Base: 0x10057000, Size: 0x00001f74, Max: 0x00028000, ABSOLUTE, COMPRESSED[0x00001d70])
 
     Execution Region REGION_ROM (Base: 0x10000000, Size: 0x00000800, Max: 0x00000800, ABSOLUTE)
 
@@ -1738,184 +1738,184 @@ Memory Map of the image
     0x10000000   0x00000800   Zero   RW            1    REGION_ROM.bss      anon$$obj.o
 
 
-    Execution Region REGION_FLASH (Base: 0x1005d800, Size: 0x00001d10, Max: 0xffffffff, ABSOLUTE)
+    Execution Region REGION_FLASH (Base: 0x10057000, Size: 0x00001d10, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x1005d800   0x000000c0   Data   RO         2544    .intvec             system_bluenrg1.o
-    0x1005d8c0   0x000000a0   Code   RO          104    . text              context_switch.o
-    0x1005d960   0x00000000   Code   RO         2980  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x1005d960   0x00000004   Code   RO         3286    .ARM.Collect$$$$00000002  mc_p.l(entry3.o)
-    0x1005d964   0x00000004   Code   RO         3289    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x1005d968   0x00000000   Code   RO         3291    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x1005d968   0x00000000   Code   RO         3293    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x1005d968   0x00000008   Code   RO         3294    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x1005d970   0x00000000   Code   RO         3296    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x1005d970   0x00000000   Code   RO         3298    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x1005d970   0x00000004   Code   RO         3287    .ARM.Collect$$$$00002713  mc_p.l(entry3.o)
-    0x1005d974   0x0000002c   Code   RO         2983    .text               mc_p.l(uidiv.o)
-    0x1005d9a0   0x00000028   Code   RO         2987    .text               mc_p.l(memcpy.o)
-    0x1005d9c8   0x00000060   Code   RO         3300    .text               mc_p.l(uldiv.o)
-    0x1005da28   0x00000020   Code   RO         3302    .text               mc_p.l(llshl.o)
-    0x1005da48   0x00000024   Code   RO         3317    .text               mc_p.l(init.o)
-    0x1005da6c   0x00000022   Code   RO         3319    .text               mc_p.l(llushr.o)
-    0x1005da8e   0x0000003a   Code   RO         3329    .text               mc_p.l(__dczerorl.o)
-    0x1005dac8   0x00000002   Code   RO         2505    i.ADC_Handler       system_bluenrg1.o
-    0x1005daca   0x00000002   PAD
-    0x1005dacc   0x00000020   Code   RO         2852    i.APP_Tick          chat.o
-    0x1005daec   0x0000014c   Code   RO         2949    i.Add_Chat_Service  gatt_db.o
-    0x1005dc38   0x0000004c   Code   RO         2950    i.Attribute_Modified_CB  gatt_db.o
-    0x1005dc84   0x00000040   Code   RO         2506    i.BOR_ConfigSave    system_bluenrg1.o
-    0x1005dcc4   0x000001e0   Code   RO         2139    i.BlueNRG_Stack_Initialization  bluenrg1_stack_init_if.o
-    0x1005dea4   0x00000008   Code   RO         2796    i.Blue_Handler      bluenrg1_it.o
-    0x1005deac   0x0000021c   Code   RO         2853    i.CHAT_DeviceInit   chat.o
-    0x1005e0c8   0x0000002c   Code   RO            5    i.Clock_Init        clock.o
-    0x1005e0f4   0x00000002   Code   RO         2508    i.DMA_Handler       system_bluenrg1.o
-    0x1005e0f6   0x00000002   PAD
-    0x1005e0f8   0x00000164   Code   RO         2509    i.DeviceConfiguration  system_bluenrg1.o
-    0x1005e25c   0x00000002   Code   RO         2797    i.GPIO_Handler      bluenrg1_it.o
-    0x1005e25e   0x00000002   PAD
-    0x1005e260   0x000000d4   Code   RO          608    i.GPIO_Init         bluenrg1_gpio.o
-    0x1005e334   0x00000012   Code   RO          610    i.GPIO_ReadBit      bluenrg1_gpio.o
-    0x1005e346   0x00000002   PAD
-    0x1005e348   0x0000002c   Code   RO         1869    i.Get_ButtonGpioPin  sdk_eval_button.o
-    0x1005e374   0x00000060   Code   RO          167    i.HAL_GetPartInfo   miscutil.o
-    0x1005e3d4   0x00000002   Code   RO         2140    i.HAL_VTimerTimeoutCallback  bluenrg1_stack_init_if.o
-    0x1005e3d6   0x00000002   Code   RO         2798    i.HardFault_Handler  bluenrg1_it.o
-    0x1005e3d8   0x00000002   Code   RO         2512    i.I2C1_Handler      system_bluenrg1.o
-    0x1005e3da   0x00000002   Code   RO         2513    i.I2C2_Handler      system_bluenrg1.o
-    0x1005e3dc   0x00000002   Code   RO         2514    i.MFT1A_Handler     system_bluenrg1.o
-    0x1005e3de   0x00000002   Code   RO         2515    i.MFT1B_Handler     system_bluenrg1.o
-    0x1005e3e0   0x00000002   Code   RO         2516    i.MFT2A_Handler     system_bluenrg1.o
-    0x1005e3e2   0x00000002   Code   RO         2517    i.MFT2B_Handler     system_bluenrg1.o
-    0x1005e3e4   0x00000100   Code   RO         2854    i.Make_Connection   chat.o
-    0x1005e4e4   0x00000002   Code   RO         2799    i.NMI_Handler       bluenrg1_it.o
-    0x1005e4e6   0x00000002   PAD
-    0x1005e4e8   0x00000088   Code   RO         1689    i.NVIC_Init         misc.o
-    0x1005e570   0x00000044   Code   RO         2519    i.NVIC_SetPriority  system_bluenrg1.o
-    0x1005e5b4   0x00000018   Code   RO         1725    i.NVIC_SystemReset  ota_btl.o
-    0x1005e5cc   0x00000002   Code   RO         2520    i.NVM_Handler       system_bluenrg1.o
-    0x1005e5ce   0x00000002   PAD
-    0x1005e5d0   0x00000014   Code   RO         1729    i.OTA_Jump_To_Service_Manager_Application  ota_btl.o
-    0x1005e5e4   0x00000008   Code   RO          216    i.Osal_MemCpy       osal.o
-    0x1005e5ec   0x00000002   Code   RO         2521    i.PKA_Handler       system_bluenrg1.o
-    0x1005e5ee   0x00000002   Code   RO         2522    i.PendSV_Handler    system_bluenrg1.o
-    0x1005e5f0   0x00000074   Code   RO         2855    i.Process_InputData  chat.o
-    0x1005e664   0x00000020   Code   RO         2523    i.RESET_HANDLER     system_bluenrg1.o
-    0x1005e684   0x00000002   Code   RO         2524    i.RTC_Handler       system_bluenrg1.o
-    0x1005e686   0x00000002   PAD
-    0x1005e688   0x0000003c   Code   RO         2525    i.SET_BORconfigStatus  system_bluenrg1.o
-    0x1005e6c4   0x00000002   Code   RO         2526    i.SPI_Handler       system_bluenrg1.o
-    0x1005e6c6   0x00000002   Code   RO         2800    i.SVC_Handler       bluenrg1_it.o
-    0x1005e6c8   0x0000001c   Code   RO         1921    i.SdkEvalComIOConfig  sdk_eval_com.o
-    0x1005e6e4   0x00000010   Code   RO         1923    i.SdkEvalComIOReceiveData  sdk_eval_com.o
-    0x1005e6f4   0x00000008   Code   RO         1924    i.SdkEvalComIOSendData  sdk_eval_com.o
-    0x1005e6fc   0x0000002a   Code   RO         1926    i.SdkEvalComIOUartIrqHandler  sdk_eval_com.o
-    0x1005e726   0x00000002   PAD
-    0x1005e728   0x000000a0   Code   RO         1928    i.SdkEvalComUartInit  sdk_eval_com.o
-    0x1005e7c8   0x00000020   Code   RO         1929    i.SdkEvalComUartIrqConfig  sdk_eval_com.o
-    0x1005e7e8   0x0000000c   Code   RO         2031    i.SdkEvalGetVersion  sdk_eval_config.o
-    0x1005e7f4   0x0000000c   Code   RO         2032    i.SdkEvalIdentification  sdk_eval_config.o
-    0x1005e800   0x00000012   Code   RO         1872    i.SdkEvalPushButtonGetState  sdk_eval_button.o
-    0x1005e812   0x00000026   Code   RO         1873    i.SdkEvalPushButtonInit  sdk_eval_button.o
-    0x1005e838   0x00000016   Code   RO         1930    i.SdkEvalUart_Send_Data  sdk_eval_com.o
-    0x1005e84e   0x00000002   PAD
-    0x1005e850   0x00000080   Code   RO         2856    i.Send_Data_Over_BLE  chat.o
-    0x1005e8d0   0x00000048   Code   RO         2528    i.Set_RF_FrontEnd   system_bluenrg1.o
-    0x1005e918   0x00000010   Code   RO            8    i.SysCount_Handler  clock.o
-    0x1005e928   0x00000098   Code   RO         1399    i.SysCtrl_GetWakeupResetReason  bluenrg1_sysctrl.o
-    0x1005e9c0   0x00000018   Code   RO         1400    i.SysCtrl_PeripheralClockCmd  bluenrg1_sysctrl.o
-    0x1005e9d8   0x00000008   Code   RO         2801    i.SysTick_Handler   bluenrg1_it.o
-    0x1005e9e0   0x000000b8   Code   RO         2530    i.SystemInit        system_bluenrg1.o
-    0x1005ea98   0x0000001c   Code   RO         1445    i.UART_Cmd          bluenrg1_uart.o
-    0x1005eab4   0x0000001c   Code   RO         1448    i.UART_GetFlagStatus  bluenrg1_uart.o
-    0x1005ead0   0x00000014   Code   RO         1449    i.UART_GetITStatus  bluenrg1_uart.o
-    0x1005eae4   0x00000008   Code   RO         2802    i.UART_Handler      bluenrg1_it.o
-    0x1005eaec   0x00000018   Code   RO         1450    i.UART_ITConfig     bluenrg1_uart.o
-    0x1005eb04   0x00000138   Code   RO         1451    i.UART_Init         bluenrg1_uart.o
-    0x1005ec3c   0x0000000c   Code   RO         1454    i.UART_ReceiveData  bluenrg1_uart.o
-    0x1005ec48   0x00000018   Code   RO         1456    i.UART_RxFifoIrqLevelConfig  bluenrg1_uart.o
-    0x1005ec60   0x00000010   Code   RO         1458    i.UART_SendData     bluenrg1_uart.o
-    0x1005ec70   0x00000002   Code   RO         2532    i.WDG_Handler       system_bluenrg1.o
-    0x1005ec72   0x00000002   PAD
-    0x1005ec74   0x00000020   Code   RO         3208    i.__0printf$8       mc_p.l(printf8.o)
-    0x1005ec94   0x000000c0   Code   RO         2534    i.__low_level_init  system_bluenrg1.o
-    0x1005ed54   0x0000000e   Code   RO         3323    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x1005ed62   0x00000002   Code   RO         3324    i.__scatterload_null  mc_p.l(handlers.o)
-    0x1005ed64   0x0000000e   Code   RO         3325    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x1005ed72   0x00000002   PAD
-    0x1005ed74   0x00000428   Code   RO         3215    i._printf_core      mc_p.l(printf8.o)
-    0x1005f19c   0x00000020   Code   RO         3216    i._printf_post_padding  mc_p.l(printf8.o)
-    0x1005f1bc   0x0000002c   Code   RO         3217    i._printf_pre_padding  mc_p.l(printf8.o)
-    0x1005f1e8   0x00000002   Code   RO         2141    i.aci_att_exchange_mtu_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1ea   0x00000002   Code   RO         2142    i.aci_att_exec_write_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1ec   0x00000002   Code   RO         2143    i.aci_att_find_by_type_value_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1ee   0x00000002   Code   RO         2144    i.aci_att_find_info_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1f0   0x00000002   Code   RO         2145    i.aci_att_prepare_write_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1f2   0x00000002   Code   RO         2146    i.aci_att_read_blob_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1f4   0x00000002   Code   RO         2147    i.aci_att_read_by_group_type_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1f6   0x00000002   Code   RO         2148    i.aci_att_read_by_type_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1f8   0x00000002   Code   RO         2149    i.aci_att_read_multiple_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1fa   0x00000002   Code   RO         2150    i.aci_att_read_resp_event  bluenrg1_stack_init_if.o
-    0x1005f1fc   0x00000002   Code   RO         2151    i.aci_gap_addr_not_resolved_event  bluenrg1_stack_init_if.o
-    0x1005f1fe   0x00000002   Code   RO         2152    i.aci_gap_authorization_req_event  bluenrg1_stack_init_if.o
-    0x1005f200   0x00000002   Code   RO         2153    i.aci_gap_bond_lost_event  bluenrg1_stack_init_if.o
-    0x1005f202   0x00000002   Code   RO         2154    i.aci_gap_keypress_notification_event  bluenrg1_stack_init_if.o
-    0x1005f204   0x00000002   Code   RO         2155    i.aci_gap_limited_discoverable_event  bluenrg1_stack_init_if.o
-    0x1005f206   0x00000002   Code   RO         2156    i.aci_gap_numeric_comparison_value_event  bluenrg1_stack_init_if.o
-    0x1005f208   0x00000002   Code   RO         2157    i.aci_gap_pairing_complete_event  bluenrg1_stack_init_if.o
-    0x1005f20a   0x00000002   Code   RO         2158    i.aci_gap_pass_key_req_event  bluenrg1_stack_init_if.o
-    0x1005f20c   0x00000002   Code   RO         2159    i.aci_gap_proc_complete_event  bluenrg1_stack_init_if.o
-    0x1005f20e   0x00000002   Code   RO         2160    i.aci_gap_slave_security_initiated_event  bluenrg1_stack_init_if.o
-    0x1005f210   0x0000000e   Code   RO         2857    i.aci_gatt_attribute_modified_event  chat.o
-    0x1005f21e   0x00000002   Code   RO         2162    i.aci_gatt_disc_read_char_by_uuid_resp_event  bluenrg1_stack_init_if.o
-    0x1005f220   0x00000002   Code   RO         2163    i.aci_gatt_error_resp_event  bluenrg1_stack_init_if.o
-    0x1005f222   0x00000002   Code   RO         2164    i.aci_gatt_indication_event  bluenrg1_stack_init_if.o
-    0x1005f224   0x00000002   Code   RO         2165    i.aci_gatt_notification_event  bluenrg1_stack_init_if.o
-    0x1005f226   0x00000002   Code   RO         2166    i.aci_gatt_prepare_write_permit_req_event  bluenrg1_stack_init_if.o
-    0x1005f228   0x00000002   Code   RO         2167    i.aci_gatt_proc_complete_event  bluenrg1_stack_init_if.o
-    0x1005f22a   0x00000002   Code   RO         2168    i.aci_gatt_proc_timeout_event  bluenrg1_stack_init_if.o
-    0x1005f22c   0x00000002   Code   RO         2169    i.aci_gatt_read_multi_permit_req_event  bluenrg1_stack_init_if.o
-    0x1005f22e   0x00000002   Code   RO         2858    i.aci_gatt_read_permit_req_event  chat.o
-    0x1005f230   0x00000002   Code   RO         2171    i.aci_gatt_server_confirmation_event  bluenrg1_stack_init_if.o
-    0x1005f232   0x00000002   PAD
-    0x1005f234   0x00000010   Code   RO         2859    i.aci_gatt_tx_pool_available_event  chat.o
-    0x1005f244   0x00000002   Code   RO         2173    i.aci_gatt_write_permit_req_event  bluenrg1_stack_init_if.o
-    0x1005f246   0x00000002   Code   RO         2860    i.aci_hal_end_of_radio_activity_event  chat.o
-    0x1005f248   0x00000016   Code   RO         2730    i.aci_hal_fw_error_event  ble_chat_main.o
-    0x1005f25e   0x00000002   Code   RO         2176    i.aci_hal_scan_req_report_event  bluenrg1_stack_init_if.o
-    0x1005f260   0x00000002   Code   RO         2177    i.aci_l2cap_command_reject_event  bluenrg1_stack_init_if.o
-    0x1005f262   0x00000002   Code   RO         2178    i.aci_l2cap_connection_update_req_event  bluenrg1_stack_init_if.o
-    0x1005f264   0x00000002   Code   RO         2179    i.aci_l2cap_connection_update_resp_event  bluenrg1_stack_init_if.o
-    0x1005f266   0x00000002   Code   RO         2180    i.aci_l2cap_proc_timeout_event  bluenrg1_stack_init_if.o
-    0x1005f268   0x0000000c   Code   RO         1933    i.fputc             sdk_eval_com.o
-    0x1005f274   0x00000002   Code   RO         2181    i.hci_data_buffer_overflow_event  bluenrg1_stack_init_if.o
-    0x1005f276   0x00000002   PAD
-    0x1005f278   0x00000048   Code   RO         2861    i.hci_disconnection_complete_event  chat.o
-    0x1005f2c0   0x00000002   Code   RO         2183    i.hci_encryption_change_event  bluenrg1_stack_init_if.o
-    0x1005f2c2   0x00000002   Code   RO         2184    i.hci_encryption_key_refresh_complete_event  bluenrg1_stack_init_if.o
-    0x1005f2c4   0x00000018   Code   RO         2731    i.hci_hardware_error_event  ble_chat_main.o
-    0x1005f2dc   0x00000002   Code   RO         2186    i.hci_le_advertising_report_event  bluenrg1_stack_init_if.o
-    0x1005f2de   0x00000002   PAD
-    0x1005f2e0   0x00000014   Code   RO         2862    i.hci_le_connection_complete_event  chat.o
-    0x1005f2f4   0x00000002   Code   RO         2188    i.hci_le_connection_update_complete_event  bluenrg1_stack_init_if.o
-    0x1005f2f6   0x00000002   Code   RO         2189    i.hci_le_data_length_change_event  bluenrg1_stack_init_if.o
-    0x1005f2f8   0x00000002   Code   RO         2190    i.hci_le_direct_advertising_report_event  bluenrg1_stack_init_if.o
-    0x1005f2fa   0x00000002   Code   RO         2191    i.hci_le_enhanced_connection_complete_event  bluenrg1_stack_init_if.o
-    0x1005f2fc   0x00000002   Code   RO         2192    i.hci_le_generate_dhkey_complete_event  bluenrg1_stack_init_if.o
-    0x1005f2fe   0x00000002   Code   RO         2193    i.hci_le_long_term_key_request_event  bluenrg1_stack_init_if.o
-    0x1005f300   0x00000002   Code   RO         2194    i.hci_le_read_local_p256_public_key_complete_event  bluenrg1_stack_init_if.o
-    0x1005f302   0x00000002   Code   RO         2195    i.hci_le_read_remote_used_features_complete_event  bluenrg1_stack_init_if.o
-    0x1005f304   0x00000002   Code   RO         2196    i.hci_number_of_completed_packets_event  bluenrg1_stack_init_if.o
-    0x1005f306   0x00000002   Code   RO         2197    i.hci_read_remote_version_information_complete_event  bluenrg1_stack_init_if.o
-    0x1005f308   0x0000011c   Code   RO         2732    i.main              ble_chat_main.o
-    0x1005f424   0x00000008   Data   RO         2033    .constdata          sdk_eval_config.o
-    0x1005f42c   0x00000004   Data   RO         2034    .constdata          sdk_eval_config.o
-    0x1005f430   0x00000004   Data   RO         2035    .constdata          sdk_eval_config.o
-    0x1005f434   0x00000004   Data   RO         2036    .constdata          sdk_eval_config.o
-    0x1005f438   0x00000004   Data   RO         2037    .constdata          sdk_eval_config.o
-    0x1005f43c   0x00000034   Data   RO         2733    .constdata          ble_chat_main.o
-    0x1005f470   0x000000a0   Data   RO         3321    Region$$Table       anon$$obj.o
+    0x10057000   0x000000c0   Data   RO         2544    .intvec             system_bluenrg1.o
+    0x100570c0   0x000000a0   Code   RO          104    . text              context_switch.o
+    0x10057160   0x00000000   Code   RO         2980  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x10057160   0x00000004   Code   RO         3286    .ARM.Collect$$$$00000002  mc_p.l(entry3.o)
+    0x10057164   0x00000004   Code   RO         3289    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x10057168   0x00000000   Code   RO         3291    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x10057168   0x00000000   Code   RO         3293    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x10057168   0x00000008   Code   RO         3294    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x10057170   0x00000000   Code   RO         3296    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x10057170   0x00000000   Code   RO         3298    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x10057170   0x00000004   Code   RO         3287    .ARM.Collect$$$$00002713  mc_p.l(entry3.o)
+    0x10057174   0x0000002c   Code   RO         2983    .text               mc_p.l(uidiv.o)
+    0x100571a0   0x00000028   Code   RO         2987    .text               mc_p.l(memcpy.o)
+    0x100571c8   0x00000060   Code   RO         3300    .text               mc_p.l(uldiv.o)
+    0x10057228   0x00000020   Code   RO         3302    .text               mc_p.l(llshl.o)
+    0x10057248   0x00000024   Code   RO         3317    .text               mc_p.l(init.o)
+    0x1005726c   0x00000022   Code   RO         3319    .text               mc_p.l(llushr.o)
+    0x1005728e   0x0000003a   Code   RO         3329    .text               mc_p.l(__dczerorl.o)
+    0x100572c8   0x00000002   Code   RO         2505    i.ADC_Handler       system_bluenrg1.o
+    0x100572ca   0x00000002   PAD
+    0x100572cc   0x00000020   Code   RO         2852    i.APP_Tick          chat.o
+    0x100572ec   0x0000014c   Code   RO         2949    i.Add_Chat_Service  gatt_db.o
+    0x10057438   0x0000004c   Code   RO         2950    i.Attribute_Modified_CB  gatt_db.o
+    0x10057484   0x00000040   Code   RO         2506    i.BOR_ConfigSave    system_bluenrg1.o
+    0x100574c4   0x000001e0   Code   RO         2139    i.BlueNRG_Stack_Initialization  bluenrg1_stack_init_if.o
+    0x100576a4   0x00000008   Code   RO         2796    i.Blue_Handler      bluenrg1_it.o
+    0x100576ac   0x0000021c   Code   RO         2853    i.CHAT_DeviceInit   chat.o
+    0x100578c8   0x0000002c   Code   RO            5    i.Clock_Init        clock.o
+    0x100578f4   0x00000002   Code   RO         2508    i.DMA_Handler       system_bluenrg1.o
+    0x100578f6   0x00000002   PAD
+    0x100578f8   0x00000164   Code   RO         2509    i.DeviceConfiguration  system_bluenrg1.o
+    0x10057a5c   0x00000002   Code   RO         2797    i.GPIO_Handler      bluenrg1_it.o
+    0x10057a5e   0x00000002   PAD
+    0x10057a60   0x000000d4   Code   RO          608    i.GPIO_Init         bluenrg1_gpio.o
+    0x10057b34   0x00000012   Code   RO          610    i.GPIO_ReadBit      bluenrg1_gpio.o
+    0x10057b46   0x00000002   PAD
+    0x10057b48   0x0000002c   Code   RO         1869    i.Get_ButtonGpioPin  sdk_eval_button.o
+    0x10057b74   0x00000060   Code   RO          167    i.HAL_GetPartInfo   miscutil.o
+    0x10057bd4   0x00000002   Code   RO         2140    i.HAL_VTimerTimeoutCallback  bluenrg1_stack_init_if.o
+    0x10057bd6   0x00000002   Code   RO         2798    i.HardFault_Handler  bluenrg1_it.o
+    0x10057bd8   0x00000002   Code   RO         2512    i.I2C1_Handler      system_bluenrg1.o
+    0x10057bda   0x00000002   Code   RO         2513    i.I2C2_Handler      system_bluenrg1.o
+    0x10057bdc   0x00000002   Code   RO         2514    i.MFT1A_Handler     system_bluenrg1.o
+    0x10057bde   0x00000002   Code   RO         2515    i.MFT1B_Handler     system_bluenrg1.o
+    0x10057be0   0x00000002   Code   RO         2516    i.MFT2A_Handler     system_bluenrg1.o
+    0x10057be2   0x00000002   Code   RO         2517    i.MFT2B_Handler     system_bluenrg1.o
+    0x10057be4   0x00000100   Code   RO         2854    i.Make_Connection   chat.o
+    0x10057ce4   0x00000002   Code   RO         2799    i.NMI_Handler       bluenrg1_it.o
+    0x10057ce6   0x00000002   PAD
+    0x10057ce8   0x00000088   Code   RO         1689    i.NVIC_Init         misc.o
+    0x10057d70   0x00000044   Code   RO         2519    i.NVIC_SetPriority  system_bluenrg1.o
+    0x10057db4   0x00000018   Code   RO         1725    i.NVIC_SystemReset  ota_btl.o
+    0x10057dcc   0x00000002   Code   RO         2520    i.NVM_Handler       system_bluenrg1.o
+    0x10057dce   0x00000002   PAD
+    0x10057dd0   0x00000014   Code   RO         1729    i.OTA_Jump_To_Service_Manager_Application  ota_btl.o
+    0x10057de4   0x00000008   Code   RO          216    i.Osal_MemCpy       osal.o
+    0x10057dec   0x00000002   Code   RO         2521    i.PKA_Handler       system_bluenrg1.o
+    0x10057dee   0x00000002   Code   RO         2522    i.PendSV_Handler    system_bluenrg1.o
+    0x10057df0   0x00000074   Code   RO         2855    i.Process_InputData  chat.o
+    0x10057e64   0x00000020   Code   RO         2523    i.RESET_HANDLER     system_bluenrg1.o
+    0x10057e84   0x00000002   Code   RO         2524    i.RTC_Handler       system_bluenrg1.o
+    0x10057e86   0x00000002   PAD
+    0x10057e88   0x0000003c   Code   RO         2525    i.SET_BORconfigStatus  system_bluenrg1.o
+    0x10057ec4   0x00000002   Code   RO         2526    i.SPI_Handler       system_bluenrg1.o
+    0x10057ec6   0x00000002   Code   RO         2800    i.SVC_Handler       bluenrg1_it.o
+    0x10057ec8   0x0000001c   Code   RO         1921    i.SdkEvalComIOConfig  sdk_eval_com.o
+    0x10057ee4   0x00000010   Code   RO         1923    i.SdkEvalComIOReceiveData  sdk_eval_com.o
+    0x10057ef4   0x00000008   Code   RO         1924    i.SdkEvalComIOSendData  sdk_eval_com.o
+    0x10057efc   0x0000002a   Code   RO         1926    i.SdkEvalComIOUartIrqHandler  sdk_eval_com.o
+    0x10057f26   0x00000002   PAD
+    0x10057f28   0x000000a0   Code   RO         1928    i.SdkEvalComUartInit  sdk_eval_com.o
+    0x10057fc8   0x00000020   Code   RO         1929    i.SdkEvalComUartIrqConfig  sdk_eval_com.o
+    0x10057fe8   0x0000000c   Code   RO         2031    i.SdkEvalGetVersion  sdk_eval_config.o
+    0x10057ff4   0x0000000c   Code   RO         2032    i.SdkEvalIdentification  sdk_eval_config.o
+    0x10058000   0x00000012   Code   RO         1872    i.SdkEvalPushButtonGetState  sdk_eval_button.o
+    0x10058012   0x00000026   Code   RO         1873    i.SdkEvalPushButtonInit  sdk_eval_button.o
+    0x10058038   0x00000016   Code   RO         1930    i.SdkEvalUart_Send_Data  sdk_eval_com.o
+    0x1005804e   0x00000002   PAD
+    0x10058050   0x00000080   Code   RO         2856    i.Send_Data_Over_BLE  chat.o
+    0x100580d0   0x00000048   Code   RO         2528    i.Set_RF_FrontEnd   system_bluenrg1.o
+    0x10058118   0x00000010   Code   RO            8    i.SysCount_Handler  clock.o
+    0x10058128   0x00000098   Code   RO         1399    i.SysCtrl_GetWakeupResetReason  bluenrg1_sysctrl.o
+    0x100581c0   0x00000018   Code   RO         1400    i.SysCtrl_PeripheralClockCmd  bluenrg1_sysctrl.o
+    0x100581d8   0x00000008   Code   RO         2801    i.SysTick_Handler   bluenrg1_it.o
+    0x100581e0   0x000000b8   Code   RO         2530    i.SystemInit        system_bluenrg1.o
+    0x10058298   0x0000001c   Code   RO         1445    i.UART_Cmd          bluenrg1_uart.o
+    0x100582b4   0x0000001c   Code   RO         1448    i.UART_GetFlagStatus  bluenrg1_uart.o
+    0x100582d0   0x00000014   Code   RO         1449    i.UART_GetITStatus  bluenrg1_uart.o
+    0x100582e4   0x00000008   Code   RO         2802    i.UART_Handler      bluenrg1_it.o
+    0x100582ec   0x00000018   Code   RO         1450    i.UART_ITConfig     bluenrg1_uart.o
+    0x10058304   0x00000138   Code   RO         1451    i.UART_Init         bluenrg1_uart.o
+    0x1005843c   0x0000000c   Code   RO         1454    i.UART_ReceiveData  bluenrg1_uart.o
+    0x10058448   0x00000018   Code   RO         1456    i.UART_RxFifoIrqLevelConfig  bluenrg1_uart.o
+    0x10058460   0x00000010   Code   RO         1458    i.UART_SendData     bluenrg1_uart.o
+    0x10058470   0x00000002   Code   RO         2532    i.WDG_Handler       system_bluenrg1.o
+    0x10058472   0x00000002   PAD
+    0x10058474   0x00000020   Code   RO         3208    i.__0printf$8       mc_p.l(printf8.o)
+    0x10058494   0x000000c0   Code   RO         2534    i.__low_level_init  system_bluenrg1.o
+    0x10058554   0x0000000e   Code   RO         3323    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x10058562   0x00000002   Code   RO         3324    i.__scatterload_null  mc_p.l(handlers.o)
+    0x10058564   0x0000000e   Code   RO         3325    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x10058572   0x00000002   PAD
+    0x10058574   0x00000428   Code   RO         3215    i._printf_core      mc_p.l(printf8.o)
+    0x1005899c   0x00000020   Code   RO         3216    i._printf_post_padding  mc_p.l(printf8.o)
+    0x100589bc   0x0000002c   Code   RO         3217    i._printf_pre_padding  mc_p.l(printf8.o)
+    0x100589e8   0x00000002   Code   RO         2141    i.aci_att_exchange_mtu_resp_event  bluenrg1_stack_init_if.o
+    0x100589ea   0x00000002   Code   RO         2142    i.aci_att_exec_write_resp_event  bluenrg1_stack_init_if.o
+    0x100589ec   0x00000002   Code   RO         2143    i.aci_att_find_by_type_value_resp_event  bluenrg1_stack_init_if.o
+    0x100589ee   0x00000002   Code   RO         2144    i.aci_att_find_info_resp_event  bluenrg1_stack_init_if.o
+    0x100589f0   0x00000002   Code   RO         2145    i.aci_att_prepare_write_resp_event  bluenrg1_stack_init_if.o
+    0x100589f2   0x00000002   Code   RO         2146    i.aci_att_read_blob_resp_event  bluenrg1_stack_init_if.o
+    0x100589f4   0x00000002   Code   RO         2147    i.aci_att_read_by_group_type_resp_event  bluenrg1_stack_init_if.o
+    0x100589f6   0x00000002   Code   RO         2148    i.aci_att_read_by_type_resp_event  bluenrg1_stack_init_if.o
+    0x100589f8   0x00000002   Code   RO         2149    i.aci_att_read_multiple_resp_event  bluenrg1_stack_init_if.o
+    0x100589fa   0x00000002   Code   RO         2150    i.aci_att_read_resp_event  bluenrg1_stack_init_if.o
+    0x100589fc   0x00000002   Code   RO         2151    i.aci_gap_addr_not_resolved_event  bluenrg1_stack_init_if.o
+    0x100589fe   0x00000002   Code   RO         2152    i.aci_gap_authorization_req_event  bluenrg1_stack_init_if.o
+    0x10058a00   0x00000002   Code   RO         2153    i.aci_gap_bond_lost_event  bluenrg1_stack_init_if.o
+    0x10058a02   0x00000002   Code   RO         2154    i.aci_gap_keypress_notification_event  bluenrg1_stack_init_if.o
+    0x10058a04   0x00000002   Code   RO         2155    i.aci_gap_limited_discoverable_event  bluenrg1_stack_init_if.o
+    0x10058a06   0x00000002   Code   RO         2156    i.aci_gap_numeric_comparison_value_event  bluenrg1_stack_init_if.o
+    0x10058a08   0x00000002   Code   RO         2157    i.aci_gap_pairing_complete_event  bluenrg1_stack_init_if.o
+    0x10058a0a   0x00000002   Code   RO         2158    i.aci_gap_pass_key_req_event  bluenrg1_stack_init_if.o
+    0x10058a0c   0x00000002   Code   RO         2159    i.aci_gap_proc_complete_event  bluenrg1_stack_init_if.o
+    0x10058a0e   0x00000002   Code   RO         2160    i.aci_gap_slave_security_initiated_event  bluenrg1_stack_init_if.o
+    0x10058a10   0x0000000e   Code   RO         2857    i.aci_gatt_attribute_modified_event  chat.o
+    0x10058a1e   0x00000002   Code   RO         2162    i.aci_gatt_disc_read_char_by_uuid_resp_event  bluenrg1_stack_init_if.o
+    0x10058a20   0x00000002   Code   RO         2163    i.aci_gatt_error_resp_event  bluenrg1_stack_init_if.o
+    0x10058a22   0x00000002   Code   RO         2164    i.aci_gatt_indication_event  bluenrg1_stack_init_if.o
+    0x10058a24   0x00000002   Code   RO         2165    i.aci_gatt_notification_event  bluenrg1_stack_init_if.o
+    0x10058a26   0x00000002   Code   RO         2166    i.aci_gatt_prepare_write_permit_req_event  bluenrg1_stack_init_if.o
+    0x10058a28   0x00000002   Code   RO         2167    i.aci_gatt_proc_complete_event  bluenrg1_stack_init_if.o
+    0x10058a2a   0x00000002   Code   RO         2168    i.aci_gatt_proc_timeout_event  bluenrg1_stack_init_if.o
+    0x10058a2c   0x00000002   Code   RO         2169    i.aci_gatt_read_multi_permit_req_event  bluenrg1_stack_init_if.o
+    0x10058a2e   0x00000002   Code   RO         2858    i.aci_gatt_read_permit_req_event  chat.o
+    0x10058a30   0x00000002   Code   RO         2171    i.aci_gatt_server_confirmation_event  bluenrg1_stack_init_if.o
+    0x10058a32   0x00000002   PAD
+    0x10058a34   0x00000010   Code   RO         2859    i.aci_gatt_tx_pool_available_event  chat.o
+    0x10058a44   0x00000002   Code   RO         2173    i.aci_gatt_write_permit_req_event  bluenrg1_stack_init_if.o
+    0x10058a46   0x00000002   Code   RO         2860    i.aci_hal_end_of_radio_activity_event  chat.o
+    0x10058a48   0x00000016   Code   RO         2730    i.aci_hal_fw_error_event  ble_chat_main.o
+    0x10058a5e   0x00000002   Code   RO         2176    i.aci_hal_scan_req_report_event  bluenrg1_stack_init_if.o
+    0x10058a60   0x00000002   Code   RO         2177    i.aci_l2cap_command_reject_event  bluenrg1_stack_init_if.o
+    0x10058a62   0x00000002   Code   RO         2178    i.aci_l2cap_connection_update_req_event  bluenrg1_stack_init_if.o
+    0x10058a64   0x00000002   Code   RO         2179    i.aci_l2cap_connection_update_resp_event  bluenrg1_stack_init_if.o
+    0x10058a66   0x00000002   Code   RO         2180    i.aci_l2cap_proc_timeout_event  bluenrg1_stack_init_if.o
+    0x10058a68   0x0000000c   Code   RO         1933    i.fputc             sdk_eval_com.o
+    0x10058a74   0x00000002   Code   RO         2181    i.hci_data_buffer_overflow_event  bluenrg1_stack_init_if.o
+    0x10058a76   0x00000002   PAD
+    0x10058a78   0x00000048   Code   RO         2861    i.hci_disconnection_complete_event  chat.o
+    0x10058ac0   0x00000002   Code   RO         2183    i.hci_encryption_change_event  bluenrg1_stack_init_if.o
+    0x10058ac2   0x00000002   Code   RO         2184    i.hci_encryption_key_refresh_complete_event  bluenrg1_stack_init_if.o
+    0x10058ac4   0x00000018   Code   RO         2731    i.hci_hardware_error_event  ble_chat_main.o
+    0x10058adc   0x00000002   Code   RO         2186    i.hci_le_advertising_report_event  bluenrg1_stack_init_if.o
+    0x10058ade   0x00000002   PAD
+    0x10058ae0   0x00000014   Code   RO         2862    i.hci_le_connection_complete_event  chat.o
+    0x10058af4   0x00000002   Code   RO         2188    i.hci_le_connection_update_complete_event  bluenrg1_stack_init_if.o
+    0x10058af6   0x00000002   Code   RO         2189    i.hci_le_data_length_change_event  bluenrg1_stack_init_if.o
+    0x10058af8   0x00000002   Code   RO         2190    i.hci_le_direct_advertising_report_event  bluenrg1_stack_init_if.o
+    0x10058afa   0x00000002   Code   RO         2191    i.hci_le_enhanced_connection_complete_event  bluenrg1_stack_init_if.o
+    0x10058afc   0x00000002   Code   RO         2192    i.hci_le_generate_dhkey_complete_event  bluenrg1_stack_init_if.o
+    0x10058afe   0x00000002   Code   RO         2193    i.hci_le_long_term_key_request_event  bluenrg1_stack_init_if.o
+    0x10058b00   0x00000002   Code   RO         2194    i.hci_le_read_local_p256_public_key_complete_event  bluenrg1_stack_init_if.o
+    0x10058b02   0x00000002   Code   RO         2195    i.hci_le_read_remote_used_features_complete_event  bluenrg1_stack_init_if.o
+    0x10058b04   0x00000002   Code   RO         2196    i.hci_number_of_completed_packets_event  bluenrg1_stack_init_if.o
+    0x10058b06   0x00000002   Code   RO         2197    i.hci_read_remote_version_information_complete_event  bluenrg1_stack_init_if.o
+    0x10058b08   0x0000011c   Code   RO         2732    i.main              ble_chat_main.o
+    0x10058c24   0x00000008   Data   RO         2033    .constdata          sdk_eval_config.o
+    0x10058c2c   0x00000004   Data   RO         2034    .constdata          sdk_eval_config.o
+    0x10058c30   0x00000004   Data   RO         2035    .constdata          sdk_eval_config.o
+    0x10058c34   0x00000004   Data   RO         2036    .constdata          sdk_eval_config.o
+    0x10058c38   0x00000004   Data   RO         2037    .constdata          sdk_eval_config.o
+    0x10058c3c   0x00000034   Data   RO         2733    .constdata          ble_chat_main.o
+    0x10058c70   0x000000a0   Data   RO         3321    Region$$Table       anon$$obj.o
 
 
     Execution Region BLOCK_STACKLIB_FLASH_DATA (Base: 0x1007f000, Size: 0x00000838, Max: 0x00001000, ABSOLUTE, UNINIT)

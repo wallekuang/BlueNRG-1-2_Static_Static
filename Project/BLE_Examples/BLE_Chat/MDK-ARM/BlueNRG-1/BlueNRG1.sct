@@ -159,11 +159,14 @@ BlueNRG-1 memory map
   */
 
  /* Including OTA firmware upgrade service manager application */
+#ifndef SERVICE_MANAGER_SIZE
 #define SERVICE_MANAGER_SIZE     0x11000
+#endif
 
-#define MEMORY_FLASH_APP_SIZE  (_MEMORY_FLASH_SIZE_ - SERVICE_MANAGER_SIZE - FLASH_NVM_DATASIZE)
+#ifndef MEMORY_FLASH_APP_OFFSET
 #define MEMORY_FLASH_APP_OFFSET  (SERVICE_MANAGER_SIZE)
-
+#endif
+#define MEMORY_FLASH_APP_SIZE  (_MEMORY_FLASH_SIZE_ - MEMORY_FLASH_APP_OFFSET - FLASH_NVM_DATASIZE)
 #else
   /* This configuration is intended for application not supporting OTA firmware upgrade */
   /*

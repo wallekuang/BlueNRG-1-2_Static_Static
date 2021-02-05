@@ -948,6 +948,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Library\Bluetooth_LE\library\static_stack\bluenrg1_stack_init_if.c</FilePath>
             </File>
+            <File>
+              <FileName>libbluenrg1_static_stack.a</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\..\..\..\Library\Bluetooth_LE\library\static_stack\libbluenrg1_static_stack.a</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1309,7 +1314,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>LS_SOURCE=LS_SOURCE_EXTERNAL_32KHZ SMPS_INDUCTOR=SMPS_INDUCTOR_10uH ST_OTA_SERVICE_MANAGER_APPLICATION=1 BLUENRG1_DEVICE HS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ USER_BUTTON=BUTTON_1</Define>
+              <Define>NO_SMART_POWER_MANAGEMENT BLE_STACK_CONFIGURATION=BLE_STACK_BASIC_CONFIGURATION SERVICE_MANAGER_SIZE=0x2800 SERVICE_MANAGER_OFFSET=0x14800 LS_SOURCE=LS_SOURCE_EXTERNAL_32KHZ SMPS_INDUCTOR=SMPS_INDUCTOR_10uH ST_OTA_SERVICE_MANAGER_APPLICATION=1 BLUENRG1_DEVICE HS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ USER_BUTTON=BUTTON_1</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\inc;..\..\..\..\..\Library\hal\inc;..\..\..\..\..\Library\BlueNRG1_Periph_Driver\inc;..\..\..\..\..\Library\CMSIS\Device\ST\BlueNRG1\Include;..\..\..\..\..\Library\CMSIS\Include;..\..\..\..\..\Library\Bluetooth_LE\inc;..\..\..\..\..\Library\BLE_Application\layers_inc;..\..\..\..\..\Library\BLE_Application\Utils\inc;..\..\..\..\..\Library\BLE_Application\OTA\inc;..\..\..\..\..\Library\SDK_Eval_BlueNRG1\inc</IncludePath>
             </VariousControls>
@@ -1345,7 +1350,7 @@
             <ScatterFile>BlueNRG1.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc>--predefine=-DMEMORY_FLASH_APP_SIZE=0x11000 </Misc>
+            <Misc>--predefine="-DMEMORY_FLASH_APP_OFFSET=0x14800 -DMEMORY_RAM_APP_OFFSET=0x0460 -DMEMORY_FLASH_APP_SIZE=0x2800"</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings>6314,6329</DisabledWarnings>
           </LDads>
@@ -1937,11 +1942,66 @@
               <FileName>stack_user_cfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>../../../../../Library/Bluetooth_LE/src/stack_user_cfg.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <uC99>2</uC99>
+                    <useXO>2</useXO>
+                    <v6Lang>0</v6Lang>
+                    <v6LangP>0</v6LangP>
+                    <vShortEn>2</vShortEn>
+                    <vShortWch>2</vShortWch>
+                    <v6Lto>2</v6Lto>
+                    <v6WtE>2</v6WtE>
+                    <v6Rtti>2</v6Rtti>
+                    <VariousControls>
+                      <MiscControls></MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
             </File>
             <File>
               <FileName>bluenrg1_stack_init_if.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\Library\Bluetooth_LE\library\static_stack\bluenrg1_stack_init_if.c</FilePath>
+            </File>
+            <File>
+              <FileName>libbluenrg1_static_stack.a</FileName>
+              <FileType>4</FileType>
+              <FilePath>..\..\..\..\..\Library\Bluetooth_LE\library\static_stack\libbluenrg1_static_stack.a</FilePath>
             </File>
           </Files>
         </Group>

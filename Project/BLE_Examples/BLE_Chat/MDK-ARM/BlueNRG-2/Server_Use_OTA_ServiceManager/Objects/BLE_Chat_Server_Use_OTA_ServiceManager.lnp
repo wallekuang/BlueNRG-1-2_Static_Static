@@ -30,6 +30,6 @@
 ".\server_use_ota_servicemanager\objects\chat.o"
 ".\server_use_ota_servicemanager\objects\gatt_db.o"
 --library_type=microlib --diag_suppress 6314,6329 --strict --scatter "BlueNRG2.sct"
---predefine="-DST_USE_OTA_SERVICE_MANAGER_APPLICATION=1 -DMEMORY_FLASH_APP_OFFSET=0x1D800 -DMEMORY_RAM_APP_OFFSET=0x0460 " --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--predefine="-DST_USE_OTA_SERVICE_MANAGER_APPLICATION=1 -DMEMORY_FLASH_APP_OFFSET=0x17000 -DMEMORY_RAM_APP_OFFSET=0x0460 " --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Server_Use_OTA_ServiceManager\Listings\BLE_Chat_Server_Use_OTA_ServiceManager.map" -o .\Server_Use_OTA_ServiceManager\Objects\BLE_Chat_Server_Use_OTA_ServiceManager.axf

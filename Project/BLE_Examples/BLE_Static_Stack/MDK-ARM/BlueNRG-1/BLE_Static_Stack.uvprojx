@@ -333,7 +333,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>LS_SOURCE=LS_SOURCE_EXTERNAL_32KHZ SMPS_INDUCTOR=SMPS_INDUCTOR_10uH APP_OFFSET=0x1B000 BLE_STACK_CONFIGURATION=BLE_STACK_FULL_CONFIGURATION</Define>
+              <Define>LS_SOURCE=LS_SOURCE_EXTERNAL_32KHZ SMPS_INDUCTOR=SMPS_INDUCTOR_10uH APP_OFFSET=0x14800 BLE_STACK_CONFIGURATION=BLE_STACK_BASIC_CONFIGURATION</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\inc;..\..\..\..\..\Library\BlueNRG1_Periph_Driver\inc;..\..\..\..\..\Library\CMSIS\Device\ST\BlueNRG1\Include;..\..\..\..\..\Library\CMSIS\Include;..\..\..\..\..\Library\hal\inc;..\..\..\..\..\Library\SDK_Eval_BlueNRG1\inc;..\..\..\..\..\Library\Bluetooth_LE\inc;..\..\..\..\..\Library\Bluetooth_LE\library\static_stack</IncludePath>
             </VariousControls>
@@ -369,7 +369,7 @@
             <ScatterFile>.\BlueNRG1.sct</ScatterFile>
             <IncludeLibs></IncludeLibs>
             <IncludeLibsPath></IncludeLibsPath>
-            <Misc>--predefine="-DMEMORY_FLASH_APP_SIZE=0x1B000"</Misc>
+            <Misc>--predefine="-DMEMORY_FLASH_APP_SIZE=0x14800"</Misc>
             <LinkerInputFile></LinkerInputFile>
             <DisabledWarnings>6314,6329</DisabledWarnings>
           </LDads>
