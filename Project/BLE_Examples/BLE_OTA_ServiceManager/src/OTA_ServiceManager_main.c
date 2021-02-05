@@ -337,6 +337,10 @@ int main(void)
   
   SdkEvalComUartInit(UART_BAUDRATE);
   
+	
+	printf("APP_WITH_OTA_SERVICE_PAGE_NUMBER_START:%x  \n", APP_WITH_OTA_SERVICE_PAGE_NUMBER_START*_MEMORY_BYTES_PER_PAGE_);
+	printf("APP_WITH_OTA_SERVICE_PAGE_NUMBER_END:%x  \n", APP_WITH_OTA_SERVICE_PAGE_NUMBER_END*_MEMORY_BYTES_PER_PAGE_);
+	printf("SM_APP_SIZE:%x  \n", SM_APP_SIZE);
   /* Erase the storage area from start page to end page */
   OTA_Erase_Flash(APP_WITH_OTA_SERVICE_PAGE_NUMBER_START,APP_WITH_OTA_SERVICE_PAGE_NUMBER_END);
   
@@ -370,7 +374,7 @@ int main(void)
       /* Jump to the new application */
       OTA_Jump_To_New_Application();
     }
-    BlueNRG_Sleep(SLEEPMODE_NOTIMER, 0, 0);
+    //BlueNRG_Sleep(SLEEPMODE_NOTIMER, 0, 0);
   }
   
 }

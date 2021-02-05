@@ -10,8 +10,7 @@
       <TargetName>Release</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
-      <uAC6>0</uAC6>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>BlueNRG-2</Device>
@@ -83,7 +82,7 @@
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>1</RunUserProg2>
             <UserProg1Name>fromelf.exe --bin Release\Objects\BLE_Static_Stack.axf --output Release\Objects\BLE_Static_Stack.bin</UserProg1Name>
-            <UserProg2Name>..\..\..\..\..\Utility\create_sym_lib.exe --symbols ..\..\sym_export.txt --rename BlueNRG_Stack_Initialization=BlueNRG_Stack_Initialization_nocallbacks Release\Objects\BLE_Static_Stack.axf Release\libbluenrg2_static_stack.a</UserProg2Name>
+            <UserProg2Name>..\..\..\..\..\Utility\create_sym_lib.exe --symbols ..\..\sym_export.txt --rename BlueNRG_Stack_Initialization=BlueNRG_Stack_Initialization_nocallbacks Release\Objects\BLE_Static_Stack.axf ..\..\..\..\..\Library\Bluetooth_LE\library\static_stack\libbluenrg2_static_stack.a</UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
             <nStopA1X>0</nStopA1X>
@@ -184,7 +183,6 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
-            <RvdsMve>0</RvdsMve>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -325,7 +323,6 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
-            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
@@ -336,7 +333,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>BLUENRG2_DEVICE APP_OFFSET=0x1B000 BLE_STACK_CONFIGURATION=BLE_STACK_FULL_CONFIGURATION</Define>
+              <Define>SMPS_INDUCTOR=SMPS_INDUCTOR_10uH BLUENRG2_DEVICE APP_OFFSET=0x1B000 BLE_STACK_CONFIGURATION=BLE_STACK_FULL_CONFIGURATION</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\inc;..\..\..\..\..\Library\BlueNRG1_Periph_Driver\inc;..\..\..\..\..\Library\CMSIS\Device\ST\BlueNRG1\Include;..\..\..\..\..\Library\CMSIS\Include;..\..\..\..\..\Library\hal\inc;..\..\..\..\..\Library\SDK_Eval_BlueNRG1\inc;..\..\..\..\..\Library\Bluetooth_LE\inc;..\..\..\..\..\Library\Bluetooth_LE\library\static_stack</IncludePath>
             </VariousControls>
@@ -469,7 +466,6 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
-                    <uGnu>2</uGnu>
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>
@@ -537,7 +533,6 @@
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
       <pCCUsed>5060750::V5.06 update 6 (build 750)::ARMCC</pCCUsed>
-      <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
           <Device>BlueNRG-2</Device>
@@ -710,7 +705,6 @@
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
             <RvdsVP>0</RvdsVP>
-            <RvdsMve>0</RvdsMve>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -851,7 +845,6 @@
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
             <uC99>1</uC99>
-            <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>0</v6Lang>
             <v6LangP>0</v6LangP>
@@ -990,7 +983,6 @@
                     <uThumb>2</uThumb>
                     <uSurpInc>2</uSurpInc>
                     <uC99>2</uC99>
-                    <uGnu>2</uGnu>
                     <useXO>2</useXO>
                     <v6Lang>0</v6Lang>
                     <v6LangP>0</v6LangP>

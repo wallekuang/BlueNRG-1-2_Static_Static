@@ -66,16 +66,22 @@
 #define HIGHER_APP_OFFSET          (LOWER_APP_OFFSET + LOWER_APP_SIZE)
 #define HIGHER_APP_SIZE            PAGE_SIZE_TRUNC((_MEMORY_FLASH_SIZE_-RESET_MANAGER_SIZE-NVM_SIZE)/2)
 
+#ifndef SERVICE_MANAGER_OFFSET
 #define SERVICE_MANAGER_OFFSET     (0x0)
+#endif
 
 #ifdef BLUENRG2_DEVICE
+#ifndef SERVICE_MANAGER_SIZE
 #define SERVICE_MANAGER_SIZE       PAGE_SIZE_ROUND(70 * 1024) /* BlueNRG-2, BLE stack v2.1 with modular approach */
+#endif
 #else
+#ifndef SERVICE_MANAGER_SIZE
 #define SERVICE_MANAGER_SIZE       PAGE_SIZE_ROUND(68 * 1024) /* BlueNRG-1, BLE stack v2.1 with modular approach */
+#endif
 #endif 
 
 #define SM_APP_OFFSET              (SERVICE_MANAGER_OFFSET + SERVICE_MANAGER_SIZE)
-#define SM_APP_SIZE                PAGE_SIZE_TRUNC((_MEMORY_FLASH_SIZE_-SERVICE_MANAGER_SIZE-NVM_SIZE))
+#define SM_APP_SIZE                PAGE_SIZE_TRUNC((_MEMORY_FLASH_SIZE_-SERVICE_MANAGER_SIZE-NVM_SIZE-SERVICE_MANAGER_OFFSET))
 
 
 /** @brief OTA Lower application  page numbers start, end, start address and end boundary: don't change them */
