@@ -1,16 +1,36 @@
 
 
-静态协议栈使用说明
+# 静态协议栈使用说明
+
+​    下面举例子基于BlueNRG-1/2平台使用静态协议栈适配 OTA_ServiceManager 和应用的例子。这里的主要结构分配如下表.
+
+| Flash                   |      |
+| :---------------------- | :--- |
+| NVM                     |      |
+| APP                     |      |
+| BLE_OTA_ServiceManager  |      |
+| BLE Stack(basic statck) |      |
+|                         |      |
+
+主要涉及到3个工程。这里我只适配了BlueNRG-1/2 Keil平台，并没有适配IAR和Truestudio. 为了方便对比和调试，我只在原先的工程中增加编译工程target，原先有的编译target选项并不受影响。测试编译下载使用静态协议栈时，请分别按顺序下载如下工程。
+
+![Target_project](./Target_project.png)
+
+
+
+BlueNRG-1 默认使用的是BLE_STACK_CONFIGURATION=BLE_STACK_BASIC_CONFIGURATION
+
+BlueNRG-2 默认使用的是BLE_STACK_CONFIGURATION=BLE_STACK_FULL_CONFIGURATION
+
+其他详细分析文档可以参考**《BlueNRG系列如何使用静态协议栈.pdf》《BlueNRG系列存储分析（Flash and RAM）.pdf》《安装GNU 工具链.pdf》**
+
+OTA 升级的操作可以参考文档**《FAQ_ BlueNRG-x系列官方OTA操作简介.pdf》**
 
 
 
 
 
-
-
-### BlueNRG-2 默认设置如下
-
-   + BlueNRG-2使用 OTA_ServiceManager + 静态协议栈 Flash分布如下图
+### BlueNRG-2使用 OTA_ServiceManager + 静态协议栈 Flash分布如下图
 
 | Flash                  | size  |
 | :--------------------- | :---- |
@@ -19,15 +39,6 @@
 | BLE_OTA_ServiceManager | 10KB  |
 | BLE Stack(Full stack)  | 108KB |
 |                        |       |
-
-### BlueNRG-2 默认宏定义
-
-| 固件                    | MEMORY FLASH APP SIZE [Linker] | MEMORY FLASH APP OFFSET [Linker] | MEMORY RAM APP OFFSET [Linker] | RESET MANAGER SIZE [PreDefine] | SERVICE MANAGER SIZE [PreDefine] | SERVICE MANAGER OFFSET [PreDefine] |      |
-| ----------------------- | ------------------------------ | -------------------------------- | ------------------------------ | ------------------------------ | -------------------------------- | ---------------------------------- | ---- |
-| BLE_StaticStack         | 0x22800                        | none(default 0)                  | none(default 0)                | 0                              | none                             | none                               |      |
-| BLE_OTA_ServiceManager  | 0x3000                         | 0x22800                          | 0x810                          | none                           | 0x25800                          | 0x22800                            |      |
-| BLE_MultipleConnections | none                           | 0x25800                          | 0x810                          | none                           | none                             | none                               |      |
-|                         |                                |                                  |                                |                                |                                  |                                    |      |
 
 
 
