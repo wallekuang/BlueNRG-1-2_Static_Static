@@ -35,12 +35,12 @@ OTA 升级的操作可以参考文档**《FAQ_ BlueNRG-x系列官方OTA操作简
 | Flash                  | size                                                 |
 | :--------------------- | :--------------------------------------------------- |
 | NVM                    | 4KB                                                  |
-| APP                    | 134KB(0x21800)          //                           |
+| APP                    | 134KB(0x21800)  or        //                         |
 | BLE_OTA_ServiceManager | 10KB(0x2800)              // 0x0001B000 ~ 0x0001D800 |
 | BLE Stack(Full stack)  | 108KB(0x1B000)         // 0x00000000 ~ 0x0001B000    |
 |                        |                                                      |
 
-
+注释： 这里地址采用相对地址
 
 ### BlueNRG-1使用Basic 协议栈 OTA_ServiceManager + 静态协议栈 Flash分布如下图
 
