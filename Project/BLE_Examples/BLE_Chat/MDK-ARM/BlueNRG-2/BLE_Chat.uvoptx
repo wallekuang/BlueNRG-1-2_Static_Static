@@ -1056,7 +1056,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
-          <Name>-U -O206 -S0 -C0 -A0 -TO18 -TC10000000 -TP21 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD200002CC -FC1000 -FN1 -FF0STBlueNRG2.FLM -FS010040000 -FL040000 -FP0($$Device:BlueNRG-2$Flash\STBlueNRG2.FLM)</Name>
+          <Name>-U-O206 -O206 -S0 -C0 -A0 -N00("ARM CoreSight SW-DP") -D00(0BB11477) -L00(0) -TO18 -TC10000000 -TP21 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD200002CC -FC1000 -FN1 -FF0STBlueNRG2.FLM -FS010040000 -FL040000 -FP0($$Device:BlueNRG-2$Flash\STBlueNRG2.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
