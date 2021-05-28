@@ -9,7 +9,7 @@
 | NVM                     |      |
 | APP                     |      |
 | BLE_OTA_ServiceManager  |      |
-| BLE Stack(basic statck) |      |
+| BLE Stack(basic or full statck ) |      |
 |                         |      |
 
 主要涉及到3个工程。这里我只适配了BlueNRG-1/2 Keil平台，并没有适配IAR和Truestudio. 为了方便对比和调试，我只在原先的工程中增加编译工程target，原先有的编译target选项并不受影响。测试编译下载使用静态协议栈时，请分别按顺序下载如下工程。
@@ -18,7 +18,7 @@
 
 
 
-BlueNRG-1 默认使用的是BLE_STACK_CONFIGURATION=BLE_STACK_BASIC_CONFIGURATION
+BlueNRG-1 默认配置了BLE_STACK_FULL_CONFIGURATION和BLE_STACK_BASIC_CONFIGURATION, 可以通过配置选项切换。需要注意的是，BLE Stack ， BLE_OTA_ServiceManager 和APP需要同时为FULL stack或者同时为basic stack。
 
 BlueNRG-2 默认使用的是BLE_STACK_CONFIGURATION=BLE_STACK_FULL_CONFIGURATION
 
