@@ -232,6 +232,8 @@ To exit from deep sleep press any key on the keyboard or reset the board.
 #include "SDK_EVAL_Com.h"
 #include "hid_stack_config.h"
 #include "clock.h"
+#include "gatt_db.h"
+
 
 /* Include the correct HID device header file */
 #ifdef HID_KEYBOARD
@@ -291,6 +293,11 @@ int main(void)
   setDefaultHidParams();
   /* Configure HID Peripheral and put the device in discoverable mode */
   ret = Configure_HidPeripheral();
+  if (ret != BLE_STATUS_SUCCESS) {
+    PRINTF("Error in configure_hid_peripheral() 0x%02x\n", ret);
+  }
+	
+	ret = Add_Chat_Service();
   if (ret != BLE_STATUS_SUCCESS) {
     PRINTF("Error in configure_hid_peripheral() 0x%02x\n", ret);
   }

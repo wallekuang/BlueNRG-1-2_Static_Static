@@ -26,6 +26,8 @@
 #include "SDK_EVAL_Config.h"
 
 #include "keyboard.h"
+#include "gatt_db.h"
+
 
 /* Private typedef -----------------------------------------------------------*/
 typedef struct hidValueS {
@@ -405,7 +407,7 @@ void APP_Tick(void)
   
 #ifndef PTS_AUTOMATING   
   /* Process Device Input Data */
-  DeviceInputData();  
+  // DeviceInputData();  
 #endif    
 }
 
@@ -518,6 +520,8 @@ void aci_gatt_attribute_modified_event(uint16_t Connection_Handle,
   HID_Lib_aci_gatt_attribute_modified_event(Connection_Handle, Attr_Handle,
                                             Offset, Attr_Data_Length,
                                             Attr_Data);
+
+	Attribute_Modified_CB(Attr_Handle, Attr_Data_Length, Attr_Data);
 #ifdef PTS_AUTOMATING   
   if ((Attr_Data_Length == 2) && (Attr_Data[1] == 0x00 && Attr_Data[0] == 0x01))
   {
