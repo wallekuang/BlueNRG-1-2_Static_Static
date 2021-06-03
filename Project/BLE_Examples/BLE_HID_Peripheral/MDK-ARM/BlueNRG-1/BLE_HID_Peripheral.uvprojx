@@ -410,9 +410,38 @@
           <GroupName>HID_Peripheral_Library</GroupName>
           <Files>
             <File>
+              <FileName>hid_peripheral_sm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\hid_peripheral_sm.c</FilePath>
+            </File>
+            <File>
+              <FileName>hid_peripheral.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\src\hid_peripheral.c</FilePath>
+            </File>
+            <File>
               <FileName>libHID_Peripheral_Library_Keyboard.a</FileName>
               <FileType>4</FileType>
               <FilePath>../../src/libHID_Peripheral_Library_Keyboard.a</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>0</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                  <ComprImg>1</ComprImg>
+                </CommonProperty>
+                <FileArmAds/>
+              </FileOption>
             </File>
             <File>
               <FileName>libHID_Peripheral_Library_Mouse.a</FileName>

@@ -66,9 +66,9 @@ typedef struct hidValueS {
 
 hidService_Type hid_param;
 
-uint8_t dev_name[]={'S', 'T', 'K', 'e', 'y', 'b', 'o', 'a', 'r', 'd'}; 
+//uint8_t dev_name[]={'S', 'T', 'K', 'e', 'y', 'b', 'o', 'a', 'r', 'd'}; 
 
-//uint8_t dev_name[]={'L','P','_','B','9','9','9'}; 
+uint8_t dev_name[]={'L','P','_','B','9','9','9','_','2','1','4','0'}; 
 
 // Keyboard report descriptor
 uint8_t reportDesc[] = {
@@ -345,14 +345,14 @@ uint8_t Configure_HidPeripheral(void)
     return ret;
   }
 
-
+#if 0
   /* Set the HID Peripheral device discoverable */
   ret = hidSetDeviceDiscoverable(LIMITED_DISCOVERABLE_MODE, sizeof(dev_name), dev_name);
   if (ret != BLE_STATUS_SUCCESS) {
     PRINTF("Error in hidSetDeviceDiscoverable() 0x%02x\n", ret);
     return ret;
   }
-
+#endif
   
   PRINTF("HID Keyboard Configured\n");
 

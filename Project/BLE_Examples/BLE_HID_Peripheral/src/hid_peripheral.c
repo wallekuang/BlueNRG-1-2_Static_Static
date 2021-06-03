@@ -604,6 +604,8 @@ uint8_t hidSetDeviceDiscoverable(uint8_t mode, uint8_t nameLen, uint8_t *name)
   uint8_t local_name[21];
   uint8_t serviceUUID[3] = {AD_TYPE_16_BIT_SERV_UUID};
 
+  printf("hidSetDeviceDiscoverable\n");
+
   memcpy(devContext.localName, name, nameLen);
   devContext.localNameLen = nameLen;
 

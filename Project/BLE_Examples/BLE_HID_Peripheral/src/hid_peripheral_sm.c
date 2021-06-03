@@ -735,7 +735,7 @@ void HID_Lib_aci_l2cap_connection_update_resp_event(uint16_t Connection_Handle,
   if (devContext.connected) {
     if (Result != 0) {
       if (!devIdleContext->updateConnParamEnded) {
-        HAL_VTimerStart_ms(HID_SLEEP_TIMER_NUMBER, CONN_PARAM_TIMEOUT);
+        //HAL_VTimerStart_ms(HID_SLEEP_TIMER_NUMBER, CONN_PARAM_TIMEOUT);
       }
       PRINTF("Conn Update Param Rejected\n");
     } else {
