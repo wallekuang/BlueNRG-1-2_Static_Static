@@ -68,6 +68,8 @@ hidService_Type hid_param;
 
 uint8_t dev_name[]={'S', 'T', 'K', 'e', 'y', 'b', 'o', 'a', 'r', 'd'}; 
 
+//uint8_t dev_name[]={'L','P','_','B','9','9','9'}; 
+
 // Keyboard report descriptor
 uint8_t reportDesc[] = {
         0x05, 0x01,                 // Usage Page (Generic Desktop)        
@@ -291,14 +293,14 @@ uint8_t Configure_HidPeripheral(void)
   connParam.interval_max = 10;
   connParam.slave_latency = 0;
   connParam.timeout_multiplier = 300;
-  ret = hidDevice_Init(IO_CAP_DISPLAY_ONLY, connParam, sizeof(dev_name), dev_name, addr);
+  ret = hidDevice_Init(IO_CAP_NO_INPUT_NO_OUTPUT, connParam, sizeof(dev_name), dev_name, addr);
   if (ret != BLE_STATUS_SUCCESS) {
     PRINTF("Error in hidDevice_Init() 0x%02x\n", ret);
     return ret;
   }
 
   /* Set the HID Peripheral Security */
-  ret = hidSetDeviceSecurty(TRUE, TRUE, 123456);
+  ret = hidSetDeviceSecurty(FALSE, TRUE, 123456);
   if (ret != BLE_STATUS_SUCCESS) {
     PRINTF("Error in hidSetDeviceSecurty() 0x%02x\n", ret);
     return ret;
@@ -343,12 +345,14 @@ uint8_t Configure_HidPeripheral(void)
     return ret;
   }
 
+
   /* Set the HID Peripheral device discoverable */
   ret = hidSetDeviceDiscoverable(LIMITED_DISCOVERABLE_MODE, sizeof(dev_name), dev_name);
   if (ret != BLE_STATUS_SUCCESS) {
     PRINTF("Error in hidSetDeviceDiscoverable() 0x%02x\n", ret);
     return ret;
   }
+
   
   PRINTF("HID Keyboard Configured\n");
 
@@ -486,7 +490,7 @@ void hci_le_connection_complete_event(uint8_t Status,
                                            Peer_Address, Conn_Interval,
                                            Conn_Latency, Supervision_Timeout,
                                            Master_Clock_Accuracy);
-  PRINTF("Connection Complet Event\n");
+  PRINTF("Connection Complet Event  Status:%x \n", Status);
 }
 
 void aci_gap_limited_discoverable_event()
@@ -555,4 +559,10 @@ void aci_l2cap_proc_timeout_event(uint16_t Connection_Handle,
 void HAL_VTimerTimeoutCallback(uint8_t timerNum)
 {
   HID_Lib_HAL_VTimerTimeoutCallback(timerNum);
+}
+void aci_att_exchange_mtu_resp_event(uint16_t Connection_Handle,
+                                     uint16_t Att_MTU)
+{
+	PRINTF("Att_MTU :%d\r\n",Att_MTU);
+	//test_send_data();
 }

@@ -10,6 +10,8 @@
 // #include "chat.h"
 
 uint16_t chatServHandle, TXCharHandle, RXCharHandle;
+uint16_t chatServHandle2, TXCharHandle2, RXCharHandle2;
+
 
 /* UUIDs */
 Service_UUID_t service_uuid;
@@ -31,6 +33,36 @@ uint8_t Add_Chat_Service(void)
   D973F2E1-B19E-11E2-9E96-0800200C9A66
   D973F2E2-B19E-11E2-9E96-0800200C9A66
   */
+
+  const uint8_t uuid2[16] = {0xBB,0x00,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe0,0xf2,0x73,0xd9};
+  const uint8_t charUuidTX2[16] = {0xBB,0x01,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe1,0xf2,0x73,0xd9};
+  const uint8_t charUuidRX2[16] = {0xBB,0x02,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe2,0xf2,0x73,0xd9};
+
+  Osal_MemCpy(&service_uuid.Service_UUID_128, uuid2, 16);
+  ret = aci_gatt_add_service(UUID_TYPE_128, &service_uuid, PRIMARY_SERVICE, 6, &chatServHandle2); 
+  if (ret != BLE_STATUS_SUCCESS) 
+    printf("aci_gatt_add_service :%x \n", ret);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;    
+
+  Osal_MemCpy(&char_uuid.Char_UUID_128, charUuidTX2, 16);
+  ret =  aci_gatt_add_char(chatServHandle2, UUID_TYPE_128, &char_uuid, 150, CHAR_PROP_NOTIFY, ATTR_PERMISSION_NONE, 0,
+                16, 1, &TXCharHandle2);
+  if (ret != BLE_STATUS_SUCCESS) 
+    printf("aci_gatt_add_char :%x \n", ret);
+  
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+
+  Osal_MemCpy(&char_uuid.Char_UUID_128, charUuidRX2, 16);
+  ret =  aci_gatt_add_char(chatServHandle2, UUID_TYPE_128, &char_uuid, 150, CHAR_PROP_WRITE|CHAR_PROP_WRITE_WITHOUT_RESP, ATTR_PERMISSION_NONE, GATT_NOTIFY_ATTRIBUTE_WRITE,
+                16, 1, &RXCharHandle2);
+  if (ret != BLE_STATUS_SUCCESS) 
+    printf("aci_gatt_add_char :%x \n", ret);
+  if (ret != BLE_STATUS_SUCCESS) goto fail;
+
+
+
+
+  
 
   const uint8_t uuid[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe0,0xf2,0x73,0xd9};
   const uint8_t charUuidTX[16] = {0x66,0x9a,0x0c,0x20,0x00,0x08,0x96,0x9e,0xe2,0x11,0x9e,0xb1,0xe1,0xf2,0x73,0xd9};

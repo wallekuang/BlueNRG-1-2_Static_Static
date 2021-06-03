@@ -17,10 +17,10 @@
 #define DEFAULT_NUM_GATT_ATTRIBUTES 9
 
 /* Number of services requests from the HID demo */
-#define NUM_APP_GATT_SERVICES (4+1)
+#define NUM_APP_GATT_SERVICES (4+2)
 
 /* Number of attributes requests from the HID demo */
-#define NUM_APP_GATT_ATTRIBUTES (40+6)
+#define NUM_APP_GATT_ATTRIBUTES (40+12)
 
 /* Number of links needed for the demo: 1
  * Only 1 the default
@@ -35,8 +35,8 @@
 
 /* Array size for the attribute value */
 #ifdef HID_KEYBOARD
-#define ATT_VALUE_ARRAY_SIZE    (284 + 80) /* HID_REPORT_MAP_CHARAC = 76 +5 , 2 HID_REPORT_CHARAC: 8+5, 1+5 */
-#define HID_MAX_ATT_SIZE        (76)  /* HID_REPORT_MAP_CHARAC len = 76 */
+#define ATT_VALUE_ARRAY_SIZE    (284 + 80 + 340) /* HID_REPORT_MAP_CHARAC = 76 +5 , 2 HID_REPORT_CHARAC: 8+5, 1+5 */
+#define HID_MAX_ATT_SIZE        (150)//(76)  /* HID_REPORT_MAP_CHARAC len = 76 */
 #else 
 #ifdef HID_MOUSE
 #define ATT_VALUE_ARRAY_SIZE    (260) /* HID_REPORT_MAP_CHARAC = 66 +5 , 1 HID_REPORT_CHARAC: 1+5 */
