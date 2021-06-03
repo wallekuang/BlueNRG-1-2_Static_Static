@@ -345,7 +345,7 @@ uint8_t Configure_HidPeripheral(void)
     return ret;
   }
 
-#if 0
+#if 1
   /* Set the HID Peripheral device discoverable */
   ret = hidSetDeviceDiscoverable(LIMITED_DISCOVERABLE_MODE, sizeof(dev_name), dev_name);
   if (ret != BLE_STATUS_SUCCESS) {

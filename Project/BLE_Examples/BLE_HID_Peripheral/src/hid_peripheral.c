@@ -634,6 +634,8 @@ uint8_t hidSetDeviceDiscoverable(uint8_t mode, uint8_t nameLen, uint8_t *name)
     }
     
     if (ret == BLE_STATUS_SUCCESS) {
+      set_default_adv_data();
+    
       STATE_TRANSITION(HID_STATE, IDLE, DEVICE_DISCOVERABLE); // Start Device Discoverable Mode
     }
   }

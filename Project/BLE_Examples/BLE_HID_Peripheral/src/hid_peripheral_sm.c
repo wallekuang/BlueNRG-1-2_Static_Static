@@ -47,6 +47,8 @@ hidGlobalContextType *hidGlobalContext = &globalContextMemory;
 HID_StateType HID_State = {HID_STATE_INIT, 1};
 devContext_Type devContext;
 
+static uint8_t mtu_change_flag = FALSE;
+
 /* Private macros ------------------------------------------------------------*/
 #ifdef DEBUG
 #include <stdio.h>
@@ -189,6 +191,15 @@ uint8_t bondingStateMachine(uint8_t subState)
   return newState;
 }
 
+void set_default_adv_data(void)
+{
+        
+  uint8_t adv_data[] = {0x02,AD_TYPE_FLAGS,FLAG_BIT_LE_LIMITED_DISCOVERABLE_MODE|FLAG_BIT_LE_GENERAL_DISCOVERABLE_MODE|FLAG_BIT_BR_EDR_NOT_SUPPORTED,  //flag
+                        13,AD_TYPE_COMPLETE_LOCAL_NAME,'L','P','_','B','9','9','9','_','2','1','4','0',           // name
+                        7,AD_TYPE_MANUFACTURER_SPECIFIC_DATA,0x14,0x80,0xc1,0x11,0x00,0xcf};   
+  aci_gap_update_adv_data(sizeof(adv_data), adv_data);
+}
+
 /***** HID Reconnection State machine *****/
 uint8_t reconnectionStateMachine(uint8_t subState)
 {
@@ -217,6 +228,7 @@ uint8_t reconnectionStateMachine(uint8_t subState)
                                                PUBLIC_ADDR, NO_WHITE_LIST_USE,
                                                (devContext.localNameLen+1), local_name, sizeof(serviceUUID), serviceUUID,
                                                0, 0);
+        set_default_adv_data();
       } else {
 	ret = aci_gap_set_direct_connectable(PUBLIC_ADDR, HIGH_DUTY_CYCLE_DIRECTED_ADV, 
                                              devContext.addrMasterType, devContext.addrMaster, 0, 0);
@@ -224,7 +236,7 @@ uint8_t reconnectionStateMachine(uint8_t subState)
       if (ret != BLE_STATUS_SUCCESS) {
 	PRINTF("Error during the Init reconnection procedure\n");
 	SUBSTATE_TRANSITION(HID_SUBSTATE_DEVICE_RECONNECTION, INIT, DONE); // Error during reconnection
-      } else {
+      } else {     
 	SUBSTATE_TRANSITION(HID_SUBSTATE_DEVICE_RECONNECTION, INIT, WAITING); // Start reconnection procedure
       }
     }
@@ -572,6 +584,21 @@ HID_StateType hidStateMachine(HID_StateType state)
     /* Error state not defined */
     break;
   }
+  
+  if(mtu_change_flag){
+     static int scount = 0;   
+     uint8_t ret = aci_gatt_exchange_config(devContext.connHandle);
+     printf("aci_gatt_exchange_config ret:%x \n", ret);
+     if(!ret && scount < 20){
+         scount++;
+     }
+     else{
+       mtu_change_flag = FALSE;
+			 scount = 0;
+     }
+  }
+
+
   return newState;
 }
 
@@ -672,6 +699,7 @@ void HID_Lib_aci_gap_pairing_complete_event(uint16_t Connection_Handle,
     devReconnectionContextType *reconnContext = (devReconnectionContextType *) hidGlobalContext;
     reconnContext->bondCompleted = TRUE;
   }
+  mtu_change_flag = TRUE;
 }
 
 void HID_Lib_aci_gap_bond_lost_event()
@@ -711,7 +739,8 @@ void HID_Lib_aci_gatt_attribute_modified_event(uint16_t Connection_Handle,
       if (getReportInfo(Attr_Handle, &id, &type) == BLE_STATUS_SUCCESS) {
         hidSetReport_CB(id, type, Attr_Data_Length, Attr_Data);
       } else {
-        PRINTF("Enable Charac Notification: 0x%02x%02x\n", Attr_Data[1], Attr_Data[0]);
+        printf("Attr_Handle:%x   Attr_Data_Length:%x \n", Attr_Handle, Attr_Data_Length);
+        //PRINTF("Enable Charac Notification: 0x%02x%02x\n", Attr_Data[1], Attr_Data[0]);
       }
     }
   }
